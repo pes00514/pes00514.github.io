@@ -1,24 +1,29 @@
-﻿<html>
+<html>
 <head>
 <form align="center">
 <h1>ID.watch | Important Dawn</h1>
 </form>
 <title>ID.watch</title>
 <SCRIPT ID=clientEventHandlersJS LANGUAGE=javascript>
-
+function Enter(){
+var ename =document.getElementById("name").value
+document.getElementById("fontone").value = ename
+document.getElementById("fonttwo").value = ename
+document.getElementById("fontthree").value = ename
+}
 //錶面>
 function surfacenext(){
 	
-	if(document.getElementById("Imgid1").src == "https://pes00514.github.io/idwatchimg/Watchsurface/1.png"){
+	if(document.getElementById("Imgid1").src == "http://pes00514.github.io/idwatchimg/Watchsurface/1.png"){
 	document.getElementById("Imgid1").src="idwatchimg/Watchsurface/2.png"
 	document.getElementById("P1").src="idwatchimg/surfaceBig/2.jpg"
-}else if(document.getElementById("Imgid1").src == "https://pes00514.github.io/idwatchimg/Watchsurface/2.png"){
+}else if(document.getElementById("Imgid1").src == "http://pes00514.github.io/idwatchimg/Watchsurface/2.png"){
 	document.getElementById("Imgid1").src="idwatchimg/Watchsurface/3.png"
 	document.getElementById("P1").src="idwatchimg/surfaceBig/3.jpg"
-}else if(document.getElementById("Imgid1").src == "https://pes00514.github.io/idwatchimg/Watchsurface/3.png"){
+}else if(document.getElementById("Imgid1").src == "http://pes00514.github.io/idwatchimg/Watchsurface/3.png"){
 	document.getElementById("Imgid1").src="idwatchimg/Watchsurface/4.png"
 	document.getElementById("P1").src="idwatchimg/surfaceBig/4.jpg"
-}else if(document.getElementById("Imgid1").src == "https://pes00514.github.io/idwatchimg/Watchsurface/4.png"){
+}else if(document.getElementById("Imgid1").src == "http://pes00514.github.io/idwatchimg/Watchsurface/4.png"){
 	document.getElementById("Imgid1").src="idwatchimg/Watchsurface/1.png"
 	document.getElementById("P1").src="idwatchimg/surfaceBig/1.jpg"
 }
@@ -27,91 +32,92 @@ function surfacenext(){
 
 }
 	
+
 //錶面<
 function surfaceprevious(){
-		if(document.getElementById("Imgid1").src == "https://pes00514.github.io/idwatchimg/Watchsurface/1.png"){
+		if(document.getElementById("Imgid1").src == "http://pes00514.github.io/idwatchimg/Watchsurface/1.png"){
 	document.getElementById("Imgid1").src="idwatchimg/Watchsurface/4.png"
 	document.getElementById("P1").src="idwatchimg/surfaceBig/4.jpg"
-}else if(document.getElementById("Imgid1").src == "https://pes00514.github.io/idwatchimg/Watchsurface/2.png"){
+}else if(document.getElementById("Imgid1").src == "http://pes00514.github.io/idwatchimg/Watchsurface/2.png"){
 	document.getElementById("Imgid1").src="idwatchimg/Watchsurface/1.png"
 	document.getElementById("P1").src="idwatchimg/surfaceBig/1.jpg"
-}else if(document.getElementById("Imgid1").src == "https://pes00514.github.io/idwatchimg/Watchsurface/3.png"){
+}else if(document.getElementById("Imgid1").src == "http://pes00514.github.io/idwatchimg/Watchsurface/3.png"){
 	document.getElementById("Imgid1").src="idwatchimg/Watchsurface/2.png"
 	document.getElementById("P1").src="idwatchimg/surfaceBig/2.jpg"
-}else if(document.getElementById("Imgid1").src == "https://pes00514.github.io/idwatchimg/Watchsurface/4.png"){
+}else if(document.getElementById("Imgid1").src == "http://pes00514.github.io/idwatchimg/Watchsurface/4.png"){
 	document.getElementById("Imgid1").src="idwatchimg/Watchsurface/3.png"
 	document.getElementById("P1").src="idwatchimg/surfaceBig/3.jpg"
 }
 }
 //錶框>
 function shellnext(){
-	if(document.getElementById("Imgid2").src == "https://pes00514.github.io/idwatchimg/Watchshell/1.jpg"){
+	if(document.getElementById("Imgid2").src == "http://pes00514.github.io/idwatchimg/Watchshell/1.jpg"){
 	document.getElementById("Imgid2").src="idwatchimg/Watchshell/2.jpg"
 	document.getElementById("P2").src="idwatchimg/shellBig/2.jpg"
-}else if(document.getElementById("Imgid2").src == "https://pes00514.github.io/idwatchimg/Watchshell/2.jpg"){
+}else if(document.getElementById("Imgid2").src == "http://pes00514.github.io/idwatchimg/Watchshell/2.jpg"){
 	document.getElementById("Imgid2").src="idwatchimg/Watchshell/1.jpg"
 	document.getElementById("P2").src="idwatchimg/shellBig/1.jpg"
 }}
 //錶框<
 function shellprevious(){
-	if(document.getElementById("Imgid2").src == "https://pes00514.github.io/idwatchimg/Watchshell/1.jpg"){
+	if(document.getElementById("Imgid2").src == "http://pes00514.github.io/idwatchimg/Watchshell/1.jpg"){
 	document.getElementById("Imgid2").src="idwatchimg/Watchshell/2.jpg"
 	document.getElementById("P2").src="idwatchimg/shellBig/2.jpg"
-}else if(document.getElementById("Imgid2").src == "https://pes00514.github.io/idwatchimg/Watchshell/2.jpg"){
+}else if(document.getElementById("Imgid2").src == "http://pes00514.github.io/idwatchimg/Watchshell/2.jpg"){
 	document.getElementById("Imgid2").src="idwatchimg/Watchshell/1.jpg"
 	document.getElementById("P2").src="idwatchimg/shellBig/1.jpg"
 }}
 //錶帶>
 function ropenext(){
-	if(document.getElementById("Imgid3").src == "https://pes00514.github.io/idwatchimg/rope/1.jpg"){
+	if(document.getElementById("Imgid3").src == "http://pes00514.github.io/idwatchimg/rope/1.jpg"){
 	document.getElementById("Imgid3").src="idwatchimg/rope/2.jpg"
 	document.getElementById("P3").src="idwatchimg/ropeBig/2.jpg"
-}else if(document.getElementById("Imgid3").src == "https://pes00514.github.io/idwatchimg/rope/2.jpg"){
+}else if(document.getElementById("Imgid3").src == "http://pes00514.github.io/idwatchimg/rope/2.jpg"){
 	document.getElementById("Imgid3").src="idwatchimg/rope/3.jpg"
 	document.getElementById("P3").src="idwatchimg/ropeBig/3.jpg"
-}else if(document.getElementById("Imgid3").src == "https://pes00514.github.io/idwatchimg/rope/3.jpg"){
+}else if(document.getElementById("Imgid3").src == "http://pes00514.github.io/idwatchimg/rope/3.jpg"){
 	document.getElementById("Imgid3").src="idwatchimg/rope/4.jpg"
 	document.getElementById("P3").src="idwatchimg/ropeBig/4.jpg"
-}else if(document.getElementById("Imgid3").src == "https://pes00514.github.io/idwatchimg/rope/4.jpg"){
+}else if(document.getElementById("Imgid3").src == "http://pes00514.github.io/idwatchimg/rope/4.jpg"){
 	document.getElementById("Imgid3").src="idwatchimg/rope/5.jpg"
 	document.getElementById("P3").src="idwatchimg/ropeBig/5.jpg"
-}else if(document.getElementById("Imgid3").src == "https://pes00514.github.io/idwatchimg/rope/5.jpg"){
+}else if(document.getElementById("Imgid3").src == "http://pes00514.github.io/idwatchimg/rope/5.jpg"){
 	document.getElementById("Imgid3").src="idwatchimg/rope/6.jpg"
 	document.getElementById("P3").src="idwatchimg/ropeBig/6.jpg"
-}else if(document.getElementById("Imgid3").src == "https://pes00514.github.io/idwatchimg/rope/6.jpg"){
+}else if(document.getElementById("Imgid3").src == "http://pes00514.github.io/idwatchimg/rope/6.jpg"){
 	document.getElementById("Imgid3").src="idwatchimg/rope/7.jpg"
 	document.getElementById("P3").src="idwatchimg/ropeBig/7.jpg"
-}else if(document.getElementById("Imgid3").src == "https://pes00514.github.io/idwatchimg/rope/7.jpg"){
+}else if(document.getElementById("Imgid3").src == "http://pes00514.github.io/idwatchimg/rope/7.jpg"){
 	document.getElementById("Imgid3").src="idwatchimg/rope/8.jpg"
 	document.getElementById("P3").src="idwatchimg/ropeBig/8.jpg"
-}else if(document.getElementById("Imgid3").src == "https://pes00514.github.io/idwatchimg/rope/8.jpg"){
+}else if(document.getElementById("Imgid3").src == "http://pes00514.github.io/idwatchimg/rope/8.jpg"){
 	document.getElementById("Imgid3").src="idwatchimg/rope/1.jpg"
 	document.getElementById("P3").src="idwatchimg/ropeBig/1.jpg"
 }}
 //錶帶<
 function ropeprevious(){
-	if(document.getElementById("Imgid3").src == "https://pes00514.github.io/idwatchimg/rope/1.jpg"){
+	if(document.getElementById("Imgid3").src == "http://pes00514.github.io/idwatchimg/rope/1.jpg"){
 	document.getElementById("Imgid3").src="idwatchimg/rope/8.jpg"
 	document.getElementById("P3").src="idwatchimg/ropeBig/8.jpg"
-}else if(document.getElementById("Imgid3").src == "https://pes00514.github.io/idwatchimg/rope/2.jpg"){
+}else if(document.getElementById("Imgid3").src == "http://pes00514.github.io/idwatchimg/rope/2.jpg"){
 	document.getElementById("Imgid3").src="idwatchimg/rope/1.jpg"
 	document.getElementById("P3").src="idwatchimg/ropeBig/1.jpg"
-}else if(document.getElementById("Imgid3").src == "https://pes00514.github.io/idwatchimg/rope/3.jpg"){
+}else if(document.getElementById("Imgid3").src == "http://pes00514.github.io/idwatchimg/rope/3.jpg"){
 	document.getElementById("Imgid3").src="idwatchimg/rope/2.jpg"
 	document.getElementById("P3").src="idwatchimg/ropeBig/2.jpg"
-}else if(document.getElementById("Imgid3").src == "https://pes00514.github.io/idwatchimg/rope/4.jpg"){
+}else if(document.getElementById("Imgid3").src == "http://pes00514.github.io/idwatchimg/rope/4.jpg"){
 	document.getElementById("Imgid3").src="idwatchimg/rope/3.jpg"
 	document.getElementById("P3").src="idwatchimg/ropeBig/3.jpg"
-}else if(document.getElementById("Imgid3").src == "https://pes00514.github.io/idwatchimg/rope/5.jpg"){
+}else if(document.getElementById("Imgid3").src == "http://pes00514.github.io/idwatchimg/rope/5.jpg"){
 	document.getElementById("Imgid3").src="idwatchimg/rope/4.jpg"
 	document.getElementById("P3").src="idwatchimg/ropeBig/4.jpg"
-}else if(document.getElementById("Imgid3").src == "https://pes00514.github.io/idwatchimg/rope/6.jpg"){
+}else if(document.getElementById("Imgid3").src == "http://pes00514.github.io/idwatchimg/rope/6.jpg"){
 	document.getElementById("Imgid3").src="idwatchimg/rope/5.jpg"
 	document.getElementById("P3").src="idwatchimg/ropeBig/5.jpg"
-}else if(document.getElementById("Imgid3").src == "https://pes00514.github.io/idwatchimg/rope/7.jpg"){
+}else if(document.getElementById("Imgid3").src == "http://pes00514.github.io/idwatchimg/rope/7.jpg"){
 	document.getElementById("Imgid3").src="idwatchimg/rope/6.jpg"
 	document.getElementById("P3").src="idwatchimg/ropeBig/6.jpg"
-}else if(document.getElementById("Imgid3").src == "https://pes00514.github.io/idwatchimg/rope/8.jpg"){
+}else if(document.getElementById("Imgid3").src == "http://pes00514.github.io/idwatchimg/rope/8.jpg"){
 	document.getElementById("Imgid3").src="idwatchimg/rope/7.jpg"
 	document.getElementById("P3").src="idwatchimg/ropeBig/7.jpg"
 }}
@@ -138,7 +144,7 @@ function ropeprevious(){
     left:810px;
     z-index:1;
 }
-	
+
 @font-face {
   font-family:CANDARA;
   src: url(fontstyle/CANDARA.woff);
@@ -150,11 +156,12 @@ function ropeprevious(){
 @font-face {
   font-family:JaneAust;
   src: url(fontstyle/JaneAust.woff);
+}
 </style>
 </head>
 <body>
 <hr size="2" align="center" noshade width="90%" color="000000">
-<a href="https://www.facebook.com/id.watchs/?fref=ts" title=""><img id="facebook" border="0" width="50" height="50" src="idwatchimg/facebook.jpg"  align="right"></a>
+<a href="https://www.facebook.com/" title=""><img id="facebook" border="0" width="50" height="50" src="idwatchimg/facebook.jpg"  align="right"></a>
 <img id="important" border="0" src="idwatchimg/important.png"  align="right">
 <br /><br /><br />
 <img id="heart" border="0" width="50" height="50" src="idwatchimg/heart.jpg"  align="right"><br /><br /><br />
@@ -167,14 +174,14 @@ function ropeprevious(){
 
 <table border=0>
 <td></td>
-<td>　　&lt;A&gt;標準簡約：<input style="font-family:CANDARA;" size="21px" name="name" type="text" value="Mini H"></td>
+<td>　　&lt;A&gt;標準簡約：<input id = "fontone" style="font-family:CANDARA;font-size:16px;border: none;" size="21px" type="text" value="Mini H"></td>
 <tr>
-<td>製作英文名：<input name="name" type="text" value="製作建議八字以內">
-<input  type="submit" value="Enter"</td>
-<td>　　&lt;B&gt;流風曲線：<input style = "font-family:Anothershabby_trial;" size="28" name="name" type="text" value="Che"></td>
+<td>製作英文名：<input id = "name" type="text" placeholder="製作建議八字以內">
+<input  type="button" value="Enter" onclick="Enter()"</td>
+<td>　　&lt;B&gt;流風曲線：<input id = "fonttwo"style = "font-family:Anothershabby_trial;font-size:16px;border: none;" size="28"  type="text" value="Che"></td>
 <tr>
 <td></td>
-<td>　　&lt;C&gt;藝術草行：<input style = "font-family:JaneAust;" size="10" name="name" type="text" value="ailjing"></td>
+<td>　　&lt;C&gt;藝術草行：<input id="fontthree" style = "font-family:JaneAust;font-size:16px;border: none;" size="10"  type="text" value="ailjing"></td>
 </table>
 
 <br /><br />
