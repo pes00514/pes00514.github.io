@@ -5,6 +5,22 @@
 </form>
 <title>ID.watch</title>
 <SCRIPT ID=clientEventHandlersJS LANGUAGE=javascript>
+setTimeout("sss()",50)
+	function sss()
+	{
+	var t = screen.height*-0.625;
+	var l = screen.width*0.52734375;
+	document.getElementById("P2").style.top=t;
+	document.getElementById("P2").style.left=l;
+	document.getElementById("P3").style.top=t;
+	document.getElementById("P3").style.left=l;	
+	var t1 = screen.height*-450/864;
+	var l1 = screen.width*900/1536;
+	document.getElementById("P1").style.top=t1;
+	document.getElementById("P1").style.left=l1;	
+	//alert(document.getElementById("P3").offsetTop);
+	
+	}
 function Enter(){
 var ename =document.getElementById("name").value
 document.getElementById("fontone").value = ename
@@ -29,6 +45,8 @@ function surfacenext(){
 }
 	//alert(document.getElementById("Imgid1").src)
 	//document.getElementById("Imgid1").src="idwatchimg/2.png"
+	//document.write("您的螢幕解析度是 "+screen.width+"*"+screen.height);
+
 }
 	
 //錶面<
@@ -45,7 +63,8 @@ function surfaceprevious(){
 }else if(document.getElementById("Imgid1").src == "https://pes00514.github.io/idwatchimg/Watchsurface/4.png"){
 	document.getElementById("Imgid1").src="idwatchimg/Watchsurface/3.png"
 	document.getElementById("P1").src="idwatchimg/surfaceBig/3.jpg"
-}}
+}
+}
 //錶框>
 function shellnext(){
 	if(document.getElementById("Imgid2").src == "https://pes00514.github.io/idwatchimg/Watchshell/1.jpg"){
@@ -122,23 +141,22 @@ function ropeprevious(){
 
 
 </SCRIPT>
-<style type="text/css">
+<style>
 #P1{
     position:absolute;
-    top:-450px;
-    left:900px;
+   <!-- top:-450px;
+    left:900px;-->
     z-index:-1;
 }
 #P2{
     position:absolute;
-    top:-540px;
-    left:810px;
+<!--top:-540px;
+    left:810px;-->
     z-index:-2;
 }
 #P3{
     position:absolute;
-    top:-540px;
-    left:810px;
+    
     z-index:-3;
 }
 
@@ -201,7 +219,7 @@ function ropeprevious(){
 <br />
 
 
-<div style="position:relative;">
+<div style="position:absolute;">
 <img id="P1" border="0" src="idwatchimg/surfaceBig/1.jpg" align="right" >
 <img id="P2" border="0" src="idwatchimg/shellBig/1.jpg" width="650" height="650" align="right">
 <img id="P3" border="0" src="idwatchimg/ropeBig/1.jpg" width="650" height="650" align="right" >
