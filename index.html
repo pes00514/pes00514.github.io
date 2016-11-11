@@ -8,14 +8,14 @@
 setTimeout("sss()",50)
 	function sss()
 	{
-	var t = screen.height*-0.625;
-	var l = screen.width*0.52734375;
+	var t = screen.height/screen.width*-960;
+	var l = screen.width/screen.height*455.625;
 	document.getElementById("P2").style.top=t;
 	document.getElementById("P2").style.left=l;
 	document.getElementById("P3").style.top=t;
 	document.getElementById("P3").style.left=l;	
-	var t1 = screen.height*-450/864;
-	var l1 = screen.width*900/1536;
+	var t1 = screen.height/screen.width*-800;
+	var l1 = screen.width/screen.height*506.25;
 	document.getElementById("P1").style.top=t1;
 	document.getElementById("P1").style.left=l1;
 	//alert(document.getElementById("P3").offsetTop);
