@@ -1,0 +1,517 @@
+﻿<html>
+  <head>
+    <meta name="generator"
+    content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
+    <title>ID.watch</title>
+	<script>
+	/*document.write("螢幕寬度: ",screen.width);
+document.write("<br />");
+document.write("螢幕高度: ",screen.height);
+document.write("<br />");
+document.write("可瀏覽頁面寬度: ",screen.availWidth);
+document.write("<br />");
+document.write("可瀏覽頁面高度: ",screen.availHeight);*/
+var path ="";
+path = "file:///C:/Users/user1/Desktop/2017/IDwatch/pes00514.github.io-master/";
+path = "https://pes00514.github.io/";
+var surface;
+var surfaceB;
+var shell;
+var shellB;
+var rope;
+var ropeB;
+var surface_count=0;
+var shell_count=0;
+var rope_count = 0;
+setTimeout("sss()",50)
+
+	function sss()
+	{
+	document.getElementById("P1").width = screen.height*650/1080*80/100;
+	document.getElementById("P1").height = screen.height*650/1080*80/100;
+	document.getElementById("P2").width = screen.height*650/1080*80/100;
+	document.getElementById("P2").height = screen.height*650/1080*80/100;
+	document.getElementById("P3").width = screen.height*650/1080*80/100;
+	document.getElementById("P3").height = screen.height*650/1080*80/100;
+	var P ="imgp";
+	var t = document.getElementById(P).offsetTop*-109;
+	//t=-2.35*document.getElementById(P).offsetTop
+	var l = document.getElementById(P).offsetLeft-(document.getElementById(P).offsetLeft*1.06);
+	document.getElementById("P1").style.top=t;
+	document.getElementById("P1").style.left=l;
+	document.getElementById("P2").style.top=t;
+	document.getElementById("P2").style.left=l;
+	document.getElementById("P3").style.top=t;
+	document.getElementById("P3").style.left=l;
+	
+	sizechange()
+	document.getElementById("GOtext").style.top = document.getElementById("GOtext").offsetTop*-4/100;
+	//document.getElementById("ID").style.left=document.getElementById("green").offsetLeft;
+	//document.getElementById("ID").style.top=document.getElementById("green").offsetTop+60;
+
+	//alert(document.getElementById("P3").offsetTop); 	
+	//alert(t+","+l);
+	}
+function Enter(){
+var ename =document.getElementById("name").value;
+document.getElementById("fontone").value = ename;
+document.getElementById("fonttwo").value = ename;
+document.getElementById("fontthree").value = ename;
+document.getElementById("fontfour").value = ename;
+}
+
+
+//錶面>
+function surfacenext(){	
+	surface_count++;
+	if(surface_count==surface.length){surface_count=0;}
+	document.getElementById("Imgid1").src=surface[surface_count];
+	document.getElementById("P1").src=surfaceB[surface_count];
+}
+	
+//錶面<
+function surfaceprevious(){
+	surface_count--;
+	if(surface_count==-1){surface_count=surface.length-1;}
+	document.getElementById("Imgid1").src=surface[surface_count];
+	document.getElementById("P1").src=surfaceB[surface_count];
+
+}
+//錶框>
+function shellnext(){
+	shell_count++;
+	if(shell_count==shell.length){shell_count=0;}
+	document.getElementById("Imgid2").src=shell[shell_count];
+	document.getElementById("P2").src=shellB[shell_count];
+	
+	//銀色只能是經典面板
+	if(shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-銀色.png"){
+		surface = ["idwatchimg/Watchsurface/S面板-簡約白.png",
+					"idwatchimg/Watchsurface/S面板-簡約黑.png"];
+		surfaceB =["idwatchimg/surfaceBig/41mm-面板-簡約白.png",
+					"idwatchimg/surfaceBig/41mm-面板-簡約黑.png"];
+		surface_count = surface.length-1;
+		surfacenext();
+	}else if(shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-亮黑.png"){
+		surface = ["idwatchimg/Watchsurface/S面板-面板-太陽紋-銀白.png",
+					"idwatchimg/Watchsurface/S面板-面板-太陽紋-曜黑.png"];
+		surfaceB =["idwatchimg/surfaceBig/41mm-面板-太陽紋-銀白.png",
+					"idwatchimg/surfaceBig/41mm-面板-太陽紋-曜黑.png"];
+		surface_count = surface.length-1;
+		surfacenext();
+	
+	}else{
+		surface = ["idwatchimg/Watchsurface/S面板-面板-太陽紋-銀白.png",
+					"idwatchimg/Watchsurface/S面板-面板-太陽紋-曜黑.png",
+					"idwatchimg/Watchsurface/S面板-簡約白.png",
+					"idwatchimg/Watchsurface/S面板-簡約黑.png"];
+		surfaceB =["idwatchimg/surfaceBig/41mm-面板-太陽紋-銀白.png",
+					"idwatchimg/surfaceBig/41mm-面板-太陽紋-曜黑.png",
+					"idwatchimg/surfaceBig/41mm-面板-簡約白.png",
+					"idwatchimg/surfaceBig/41mm-面板-簡約黑.png"];
+	}
+}
+//錶框<
+function shellprevious(){
+	shell_count--;
+	if(shell_count==-1){shell_count=shell.length-1;}
+	document.getElementById("Imgid2").src=shell[shell_count];
+	document.getElementById("P2").src=shellB[shell_count];
+	
+	//銀色只能是經典面板
+	if(shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-銀色.png"){
+	surface = ["idwatchimg/Watchsurface/S面板-簡約白.png",
+				"idwatchimg/Watchsurface/S面板-簡約黑.png"];
+	surfaceB =["idwatchimg/surfaceBig/41mm-面板-簡約白.png",
+				"idwatchimg/surfaceBig/41mm-面板-簡約黑.png"];
+	surface_count = surface.length-1;
+	surfacenext();
+	}else if(shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-亮黑.png"){
+		surface = ["idwatchimg/Watchsurface/S面板-面板-太陽紋-銀白.png",
+					"idwatchimg/Watchsurface/S面板-面板-太陽紋-曜黑.png"];
+		surfaceB =["idwatchimg/surfaceBig/41mm-面板-太陽紋-銀白.png",
+					"idwatchimg/surfaceBig/41mm-面板-太陽紋-曜黑.png"];
+		surface_count = surface.length-1;
+		surfacenext();
+	
+	}else{
+		surface = ["idwatchimg/Watchsurface/S面板-面板-太陽紋-銀白.png",
+					"idwatchimg/Watchsurface/S面板-面板-太陽紋-曜黑.png",
+					"idwatchimg/Watchsurface/S面板-簡約白.png",
+					"idwatchimg/Watchsurface/S面板-簡約黑.png"];
+		surfaceB =["idwatchimg/surfaceBig/41mm-面板-太陽紋-銀白.png",
+					"idwatchimg/surfaceBig/41mm-面板-太陽紋-曜黑.png",
+					"idwatchimg/surfaceBig/41mm-面板-簡約白.png",
+					"idwatchimg/surfaceBig/41mm-面板-簡約黑.png"];	
+	}
+}
+//錶帶>
+function ropenext(){
+	rope_count++;
+	if(rope_count==rope.length){rope_count=0;}
+	document.getElementById("Imgid3").src=rope[rope_count];
+	document.getElementById("P3").src=ropeB[rope_count];
+}
+//錶帶<
+function ropeprevious(){
+	rope_count--;
+	if(rope_count==-1){rope_count=rope.length-1;}
+	document.getElementById("Imgid3").src=rope[rope_count];
+	document.getElementById("P3").src=ropeB[rope_count];
+}
+
+function sizechange(){
+	var fm = document.getElementById("form1");
+	var size;
+	for (var i=0; i<fm.wsize.length; i++)
+	{
+	   if (fm.wsize[i].checked)
+	   {
+		  size = fm.wsize[i].value;
+		  break;
+	   }
+	}
+	if(size=="36mm"){
+		surface = ["idwatchimg/Watchsurface/S面板-簡約白.png",
+					"idwatchimg/Watchsurface/S面板-簡約黑.png"];
+		surfaceB =["idwatchimg/surfaceBig/36mm-面板-簡約白.png",
+					"idwatchimg/surfaceBig/36mm-面板-簡約黑.png"];
+		
+		shell = ["idwatchimg/Watchshell/S錶殼-玫瑰金.png",
+					"idwatchimg/Watchshell/S錶殼-銀色.png"];
+		shellB = ["idwatchimg/shellBig/36mm-錶殼-玫瑰金.png",
+					"idwatchimg/shellBig/36mm-錶殼-銀色.png"];
+		rope = ["idwatchimg/rope/S皮-沉黑.png",
+				"idwatchimg/rope/S皮-紅褐.png",
+				"idwatchimg/rope/S皮-粉色(近膚色的淺粉).png",
+				"idwatchimg/rope/S金屬米蘭-玫瑰金.png",
+				"idwatchimg/rope/S金屬米蘭-銀色.png"];
+		ropeB = ["idwatchimg/ropeBig/36mm皮-沉黑.png",
+					"idwatchimg/ropeBig/36mm皮-紅褐.png",
+					"idwatchimg/ropeBig/36mm皮-粉色(近膚色的淺粉).png",
+					"idwatchimg/ropeBig/36mm-金屬米蘭-玫瑰金.png",
+					"idwatchimg/ropeBig/36mm-金屬米蘭-銀色.png"];
+	}else if(size=="41mm"){
+		surface = ["idwatchimg/Watchsurface/S面板-面板-太陽紋-銀白.png",
+					"idwatchimg/Watchsurface/S面板-面板-太陽紋-曜黑.png",
+					"idwatchimg/Watchsurface/S面板-簡約白.png",
+					"idwatchimg/Watchsurface/S面板-簡約黑.png"];
+		surfaceB =["idwatchimg/surfaceBig/41mm-面板-太陽紋-銀白.png",
+					"idwatchimg/surfaceBig/41mm-面板-太陽紋-曜黑.png",
+					"idwatchimg/surfaceBig/41mm-面板-簡約白.png",
+					"idwatchimg/surfaceBig/41mm-面板-簡約黑.png"];				
+		shell = ["idwatchimg/Watchshell/S錶殼-玫瑰金.png",
+					"idwatchimg/Watchshell/S錶殼-亮黑.PNG",
+					"idwatchimg/Watchshell/S錶殼-銀色.png"];
+		shellB = ["idwatchimg/shellBig/41mm-錶殼-玫瑰金.png",
+					"idwatchimg/shellBig/41mm-錶殼-亮黑.png",
+					"idwatchimg/shellBig/41mm-錶殼-銀色.png"];
+		rope = ["idwatchimg/rope/S皮-沉黑.png",
+				"idwatchimg/rope/S皮-紅褐.png",
+				"idwatchimg/rope/S皮-粉色(近膚色的淺粉).png",
+				"idwatchimg/rope/S皮-瘋馬褐.png",
+				"idwatchimg/rope/S金屬米蘭-玫瑰金.png",
+				"idwatchimg/rope/S金屬米蘭-黑鋼.png",
+				"idwatchimg/rope/S金屬米蘭-銀色.png"];
+		ropeB = ["idwatchimg/ropeBig/41mm皮-沉黑.png",
+					"idwatchimg/ropeBig/41mm皮-紅褐.png",
+					"idwatchimg/ropeBig/41mm皮-粉色(近膚色的淺粉).png",
+					"idwatchimg/ropeBig/41mm皮-瘋馬褐.png",
+					"idwatchimg/ropeBig/41mm-金屬米蘭-玫瑰金.png",
+					"idwatchimg/ropeBig/41mm-金屬米蘭-黑鋼.png",
+					"idwatchimg/ropeBig/41mm-金屬米蘭-銀色.png"];
+	}
+	return_zero();
+}
+//切換size歸零
+function return_zero(){
+	surface_count=0;
+	document.getElementById("Imgid1").src=surface[surface_count];
+	document.getElementById("P1").src=surfaceB[surface_count];
+	shell_count=0;
+	document.getElementById("Imgid2").src=shell[shell_count];
+	document.getElementById("P2").src=shellB[shell_count];
+	rope_count=0;
+	document.getElementById("Imgid3").src=rope[rope_count];
+	document.getElementById("P3").src=ropeB[rope_count];
+}
+//判斷選配後的網址
+function goidwatch(){
+	var fm = document.getElementById("form1");
+	var size;
+	var go_href;
+	for (var i=0; i<fm.wsize.length; i++)
+	{
+	   if (fm.wsize[i].checked)
+	   {
+		  size = fm.wsize[i].value;
+		  break;
+	   }
+	}
+	if(size=="41mm"){
+		if(ropeB[rope_count]=="idwatchimg/ropeBig/41mm皮-紅褐.png"){
+			if(shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-銀色.png"||shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-玫瑰金.png"||shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-亮黑.png"){
+				if(surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-簡約白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-簡約黑.png"){
+					location.href='https://goo.gl/Et1yQZ';
+				}else if(surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-太陽紋-銀白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-太陽紋-曜黑.png"){
+					location.href='';
+				}
+			}
+		}else if(ropeB[rope_count]=="idwatchimg/ropeBig/41mm皮-沉黑.png"){
+			if(shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-銀色.png"||shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-玫瑰金.png"||shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-亮黑.png"){
+				if(surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-簡約白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-簡約黑.png"){
+					location.href='https://goo.gl/9Y2Zv3';
+				}else if(surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-太陽紋-銀白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-太陽紋-曜黑.png"){
+					location.href='https://goo.gl/4EquSh';
+				}
+			}
+		}else if(ropeB[rope_count]=="idwatchimg/ropeBig/41mm皮-瘋馬褐.png"){
+			if(shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-銀色.png"||shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-玫瑰金.png"||shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-亮黑.png"){
+				if(surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-簡約白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-簡約黑.png"){
+					location.href='https://goo.gl/dwzE4q';
+				}else if(surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-太陽紋-銀白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-太陽紋-曜黑.png"){
+					location.href='https://goo.gl/MLV7NC';
+				}
+			}
+		}else if(ropeB[rope_count]=="idwatchimg/ropeBig/41mm-金屬米蘭-玫瑰金.png"){
+			if(shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-銀色.png"||shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-玫瑰金.png"||shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-亮黑.png"){
+				if(surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-簡約白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-簡約黑.png"){
+					location.href='https://goo.gl/9zaRFe';
+				}else if(surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-太陽紋-銀白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-太陽紋-曜黑.png"){
+					location.href='https://goo.gl/zLMNxy';
+				}
+			}
+		}else if(ropeB[rope_count]=="idwatchimg/ropeBig/41mm-金屬米蘭-黑鋼.png"){
+			if(shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-銀色.png"||shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-玫瑰金.png"||shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-亮黑.png"){
+				if(surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-簡約白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-簡約黑.png"){
+					location.href='https://goo.gl/tCy45R';
+				}else if(surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-太陽紋-銀白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-太陽紋-曜黑.png"){
+					location.href='https://goo.gl/kXALcZ';
+				}
+			}
+		}else if(ropeB[rope_count]=="idwatchimg/ropeBig/41mm皮-粉色(近膚色的淺粉).png"){
+			if(shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-銀色.png"||shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-玫瑰金.png"||shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-亮黑.png"){
+				if(surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-簡約白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-簡約黑.png"){
+					location.href='';
+				}else if(surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-太陽紋-銀白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-太陽紋-曜黑.png"){
+					location.href='';
+				}
+			}
+		}else if(ropeB[rope_count]=="idwatchimg/ropeBig/41mm-金屬米蘭-銀色.png"){
+			if(shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-銀色.png"||shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-玫瑰金.png"||shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-亮黑.png"){
+				if(surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-簡約白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-簡約黑.png"){
+					location.href='';
+				}else if(surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-太陽紋-銀白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-太陽紋-曜黑.png"){
+					location.href='';
+				}
+			}
+		}
+	}else if(size=="36mm"){
+		if(ropeB[rope_count]=="idwatchimg/ropeBig/36mm皮-紅褐.png"){
+			if(shellB[shell_count]=="idwatchimg/shellBig/36mm-錶殼-銀色.png"||shellB[shell_count]=="idwatchimg/shellBig/36mm-錶殼-玫瑰金.png"){
+				if(surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-簡約白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-簡約黑.png"){
+					location.href='';
+				}
+			}
+		}else if(ropeB[rope_count]=="idwatchimg/ropeBig/36mm皮-沉黑.png"){
+			if(shellB[shell_count]=="idwatchimg/shellBig/36mm-錶殼-銀色.png"||shellB[shell_count]=="idwatchimg/shellBig/36mm-錶殼-玫瑰金.png"){
+				if(surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-簡約白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-簡約黑.png"){
+					location.href='';
+				}
+			}
+		}else if(ropeB[rope_count]=="idwatchimg/ropeBig/36mm皮-粉色(近膚色的淺粉).png"){
+			if(shellB[shell_count]=="idwatchimg/shellBig/36mm-錶殼-銀色.png"||shellB[shell_count]=="idwatchimg/shellBig/36mm-錶殼-玫瑰金.png"){
+				if(surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-簡約白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-簡約黑.png"){
+					location.href='';
+				}
+			}
+		}else if(ropeB[rope_count]=="idwatchimg/ropeBig/36mm-金屬米蘭-銀色.png"){
+			if(shellB[shell_count]=="idwatchimg/shellBig/36mm-錶殼-銀色.png"||shellB[shell_count]=="idwatchimg/shellBig/36mm-錶殼-玫瑰金.png"){
+				if(surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-簡約白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-簡約黑.png"){
+					location.href='';
+				}
+			}
+		}else if(ropeB[rope_count]=="idwatchimg/ropeBig/36mm-金屬米蘭-玫瑰金.png"){
+			if(shellB[shell_count]=="idwatchimg/shellBig/36mm-錶殼-銀色.png"||shellB[shell_count]=="idwatchimg/shellBig/36mm-錶殼-玫瑰金.png"){
+				if(surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-簡約白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-簡約黑.png"){
+					location.href='';
+				}
+			}
+		}
+	}
+}
+</SCRIPT>
+<style type="text/css">
+#P1{
+    position:absolute;
+
+    z-index:-1;
+}
+#P2{
+    position:absolute;
+
+    z-index:-2;
+}
+#P3{
+    position:absolute;
+    
+    z-index:-3;
+}
+#green{
+position:absolute;
+right:10px;
+z-index:1;
+}
+#ID{
+position:absolute;
+right:10px;
+z-index:1;
+}
+@font-face {
+  font-family:CANDARA;
+  src: url(fontstyle/字型A/CANDARA.TTF);
+}
+@font-face {
+  font-family:Anothershabby_trial;
+  src: url(fontstyle/字型B/Anothershabby_trial.ttf);
+}
+@font-face {
+  font-family:JaneAust;
+  src: url(fontstyle/字型C/JaneAust.ttf);
+}
+@font-face {
+  font-family:AlexBrush-Regular;
+  src: url(fontstyle/字型D/AlexBrush-Regular.ttf);
+}
+div.my1 {
+font-family: Microsoft JhengHei;
+font-size:26px;
+}
+
+</style>
+  </head>
+  <body>
+  <form id="form1">
+    <h1  align="center">ID.watch | Important Dawn</h1>
+  
+  <script id="clientEventHandlersJS" language="javascript"></script> 
+  <a href="https://www.facebook.com/id.watchs/" title="">
+    <img id="facebook" border="0" width="50" height="50" src="idwatchimg/facebook.jpg" align="right" />
+  </a> 
+  <img id="important" border="0" src="idwatchimg/important.png" align="right" />
+  <hr size="2" align="center" noshade="noshade" width="90%" color="#000000" />
+  <br />
+  <a href="http://line.naver.jp/ti/p/@jix1367x" title="歡迎+Line">
+    <img id="green" border="0" width="50" height="50" src="idwatchimg/green.jpg" align="right" />
+  </a>
+  <br style="line-height:60px;" />
+  <a href="https://www.idwatch.me/" title="IDwatch">
+    <img id="ID" border="0" width="50" height="50" src="idwatchimg/ID.png" align="right" />
+  </a>
+  <table border="0" width='90%' align="center">
+    <tr>
+      <td style="width:36%;text-align:left;">
+        <div id="my1">&#160;&#160;&#160;&#160;&#160; &lt;&#160;指針設計字型參考/Font reference&#160;&gt;
+        <br />
+        <br />&#160;&#160;&#160;&#160;&#160; 製作英文名：
+        <input id="name" type="text" placeholder="製作建議八字以內" maxlength="10" style="font-size:26px" /> 
+        <input type="button" value="Enter" onclick="Enter()" /></div>
+      </td>
+      <td style="width:13.5%;text-align:center;vertical-align:text-top;border-right:1px solid #000000">
+        <div class="my1">
+        <img src="idwatchimg/A.png" width="30%" />
+        <br />標準簡約
+        <br />
+        <br />
+        <input id="fontone" style="font-family:CANDARA;font-size:26px;border: none;text-align:center;" size="10px" type="text"
+        value="Shaing" /></div>
+      </td>
+      <td style="width:13.5%;text-align:center;vertical-align:text-top;border-right:1px solid #000000">
+        <div class="my1">
+        <img src="idwatchimg/B.png" width="30%" />
+        <br />流風曲線
+        <br />
+        <br />
+        <input id="fonttwo" style="font-family:Anothershabby_trial;font-size:26px;border: none;text-align:center;" size="10px"
+        type="text" value="Shaing" /></div>
+      </td>
+      <td style="width:13.5%;text-align:center;vertical-align:text-top;border-right:1px solid #000000">
+        <div class="my1">
+        <img src="idwatchimg/C.png" width="30%" />
+        <br />藝術草行
+        <br />
+        <br />
+        <input id="fontthree" style="font-family:JaneAust;font-size:26px;border: none;text-align:center;" size="5px" type="text"
+        value="Shaing" /></div>
+      </td>
+      <td style="width:13.5%;text-align:center;vertical-align:text-top;">
+        <div class="my1">
+        <img src="idwatchimg/D.png" width="30%" />
+        <br />雅緻風藝
+        <br />
+        <br />
+        <input id="fontfour" style="font-family:AlexBrush-Regular;font-size:26px;border: none;text-align:center;" size="5px"
+        type="text" value="Shaing" /></div>
+      </td>
+    </tr>
+  </table>
+  <br />
+  <br />
+  <hr size="1" align="center" noshade="noshade" width="90%" color="#AAAAAA" />
+  <table border="0" width='100%' align="center">
+    <tr>
+      <td style="width:30%;text-align:center;border-right:1px solid #000000">
+        <table border="0" width="100%"  align="center" >
+          <tr>
+            <td colspan="2" style="text-align:center;">
+              <div class="my1">&lt;&#160;尺寸選擇/Size selection&#160;&gt;</div>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align:center;"><input type="radio" name="wsize" value="36mm" onchange="sizechange();" checked="true" />36mm</td>
+            <td style="text-align:center;"><input type="radio" name="wsize" value="41mm" onchange="sizechange();" />41mm</td>
+          </tr>
+          <tr>
+            <td style="text-align:center;"><img width="100%" src="idwatchimg/%E5%B0%BA%E5%AF%B836mm.png" style="margin-right: -20px;" /></td>
+            <td style="text-align:center;"><img width="100%" src="idwatchimg/%E5%B0%BA%E5%AF%B841mm.png" style="margin-left: -20px;" /></td>
+          </tr>
+        </table>
+      </td>
+      <td id="imgp" width="20%">
+        <div style="position:absolute;">
+        <img id="P1" border="0" src="idwatchimg/surfaceBig/36mm-%E9%9D%A2%E6%9D%BF-%E7%B0%A1%E7%B4%84%E7%99%BD.png"
+        align="center" /> 
+        <img id="P2" border="0" src="idwatchimg/shellBig/36mm-%E9%8C%B6%E6%AE%BC-%E9%8A%80%E8%89%B2.png" width="650" height="650"
+        align="center" /> 
+        <img id="P3" border="0" src="idwatchimg/ropeBig/36mm%E7%9A%AE-%E7%B4%85%E8%A4%90.png" width="650" height="650"
+        align="center" /></div>
+      </td>
+      <td width="25%" style="text-align:center;vertical-align:middle;">
+      <!--錶面-->
+      <input type="button" value="&lt;" onclick="surfaceprevious()" /> 
+      <img id="Imgid1" border="0" src="idwatchimg/Watchsurface/S%E9%9D%A2%E6%9D%BF-%E7%B0%A1%E7%B4%84%E7%99%BD.png" width="30%"
+      display:none="" /> 
+      <input type="button" value="&gt;" onclick="surfacenext()" />
+      <br />
+      <!--錶框-->
+      <input type="button" value="&lt;" onclick="shellprevious()" /> 
+      <img id="Imgid2" border="0" src="idwatchimg/Watchshell/S%E9%8C%B6%E6%AE%BC-%E9%8A%80%E8%89%B2.png" width="30%"
+      display:none="" /> 
+      <input type="button" value="&gt;" onclick="shellnext()" />
+      <br />
+      <!--錶帶-->
+      <input type="button" value="&lt;" onclick="ropeprevious()" /> 
+      <img id="Imgid3" border="0" src="idwatchimg/rope/S%E7%9A%AE-%E7%B4%85%E8%A4%90.png" width="30%" display:none="" /> 
+      <input type="button" value="&gt;" onclick="ropenext()" />
+	  </td>
+      <td width="25%" style="text-align:center;vertical-align:middle;" valign="center">
+        
+		<a href="#" title="IDwatch" style="color:blue;text-decoration:none;font-weight:bold;font-family: Microsoft JhengHei;font-size:20px;"onclick="goidwatch()">
+        <img src="idwatchimg/GO.png" width="15%" /><span id="GOtext" style="position:relative;">&#160;&gt;&#160;&gt;&#160;&gt;&#160;&#160;https://www.idwatch.me/</span>
+		</a>
+      </td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>
