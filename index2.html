@@ -27,16 +27,16 @@ setTimeout("sss()",50)
 
 	function sss()
 	{
-	document.getElementById("P1").width = screen.height*650/1080*80/100;
-	document.getElementById("P1").height = screen.height*650/1080*80/100;
-	document.getElementById("P2").width = screen.height*650/1080*80/100;
-	document.getElementById("P2").height = screen.height*650/1080*80/100;
-	document.getElementById("P3").width = screen.height*650/1080*80/100;
-	document.getElementById("P3").height = screen.height*650/1080*80/100;
+	document.getElementById("P1").width = screen.width*650/2560*80/100;
+	document.getElementById("P1").height = screen.width*650/2560*80/100;
+	document.getElementById("P2").width = screen.width*650/2560*80/100;
+	document.getElementById("P2").height = screen.width*650/2560*80/100;
+	document.getElementById("P3").width = screen.width*650/2560*80/100;
+	document.getElementById("P3").height = screen.width*650/2560*80/100;
 	var P ="imgp";
-	var t = document.getElementById(P).offsetTop*-109;
+	var t = screen.width*(document.getElementById(P).offsetTop*-109)/2560;
 	//t=-2.35*document.getElementById(P).offsetTop
-	var l = document.getElementById(P).offsetLeft-(document.getElementById(P).offsetLeft*1.06);
+	var l = screen.width*(document.getElementById(P).offsetLeft*-0.06)/2560;
 	document.getElementById("P1").style.top=t;
 	document.getElementById("P1").style.left=l;
 	document.getElementById("P2").style.top=t;
@@ -45,13 +45,39 @@ setTimeout("sss()",50)
 	document.getElementById("P3").style.left=l;
 	
 	sizechange()
-	document.getElementById("GOtext").style.top = document.getElementById("GOtext").offsetTop*-4/100;
+	//document.getElementById("GOtext").style.top = document.getElementById("GOtext").offsetTop*-4/100;
 	//document.getElementById("ID").style.left=document.getElementById("green").offsetLeft;
 	//document.getElementById("ID").style.top=document.getElementById("green").offsetTop+60;
-
-	//alert(document.getElementById("P3").offsetTop); 	
+	
 	//alert(t+","+l);
+	for(var i=0;i<surface.length;i++){
+		preloadImg(surface[i]);
 	}
+	for(var i=0;i<surfaceB.length;i++){
+		preloadImg(surfaceB[i]);
+	}
+	for(var i=0;i<shell.length;i++){
+		preloadImg(shell[i]);
+	}
+	for(var i=0;i<shellB.length;i++){
+		preloadImg(shellB[i]);
+	}
+	for(var i=0;i<rope.length;i++){
+		preloadImg(rope[i]);
+	}
+	for(var i=0;i<ropeB.length;i++){
+		preloadImg(ropeB[i]);
+	}
+	
+	}
+	
+function preloadImg(image) {
+   var img = new Image();
+   img.src = image;
+  }
+
+
+	
 function Enter(){
 var ename =document.getElementById("name").value;
 document.getElementById("fontone").value = ename;
