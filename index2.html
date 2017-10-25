@@ -46,12 +46,12 @@ setTimeout("sss()",50)
 
 	function sss()
 	{
-	document.getElementById("P1").width = screen.width*281/screen.height;
-	document.getElementById("P1").height = screen.width*281/screen.height;
-	document.getElementById("P2").width = screen.width*281/screen.height;
-	document.getElementById("P2").height = screen.width*281/screen.height;
-	document.getElementById("P3").width = screen.width*281/screen.height;
-	document.getElementById("P3").height = screen.width*281/screen.height;
+	document.getElementById("P1").width = screen.width*250/screen.height;
+	document.getElementById("P1").height = screen.width*250/screen.height;
+	document.getElementById("P2").width = screen.width*250/screen.height;
+	document.getElementById("P2").height = screen.width*250/screen.height;
+	document.getElementById("P3").width = screen.width*250/screen.height;
+	document.getElementById("P3").height = screen.width*250/screen.height;
 	var P ="imgp";
 	var t = screen.width*(document.getElementById(P).offsetTop*-140)/2560;
 	//t=-2.35*document.getElementById(P).offsetTop
@@ -62,7 +62,7 @@ setTimeout("sss()",50)
 	document.getElementById("P2").style.left=l;
 	document.getElementById("P3").style.top=t;
 	document.getElementById("P3").style.left=l;
-	document.getElementsByClass("my1").style.fontSize = screen.width/screen.height+"px";
+	document.getElementsByClass("my1").style.fontSize = Number(screen.width/screen.height)+"px";
 	sizechange();
 	//document.getElementById("GOtext").style.top = document.getElementById("GOtext").offsetTop*-4/100;
 	//document.getElementById("ID").style.left=document.getElementById("green").offsetLeft;
