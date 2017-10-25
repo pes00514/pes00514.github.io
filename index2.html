@@ -66,7 +66,7 @@ setTimeout("sss()",50)
 		for(var i=0;i<my1c.length;i++){
 		  my1c[i].style.fontSize = parseInt(screen.width/screen.height*10.97)+"px";
 		}
-	sizechange();
+	sizechange("36mm");
 	//document.getElementById("GOtext").style.top = document.getElementById("GOtext").offsetTop*-4/100;
 	//document.getElementById("ID").style.left=document.getElementById("green").offsetLeft;
 	//document.getElementById("ID").style.top=document.getElementById("green").offsetTop+60;
@@ -210,18 +210,9 @@ function ropeprevious(){
 	document.getElementById("P3").src=ropeB[rope_count];
 }
 
-function sizechange(){
-	var fm = document.getElementById("form1");
-	var size;
-	for (var i=0; i<fm.wsize.length; i++)
-	{
-	   if (fm.wsize[i].checked)
-	   {
-		  size = fm.wsize[i].value;
-		  break;
-	   }
-	}
-	if(size=="36mm"){
+function sizechange(sId){
+
+	if(sId=="36mm"){
 		surface = ["idwatchimg/Watchsurface/S面板-簡約白.png",
 					"idwatchimg/Watchsurface/S面板-簡約黑.png"];
 		surfaceB =["idwatchimg/surfaceBig/36mm-面板-簡約白.png",
@@ -241,7 +232,7 @@ function sizechange(){
 					"idwatchimg/ropeBig/36mm皮-粉色(近膚色的淺粉).png",
 					"idwatchimg/ropeBig/36mm-金屬米蘭-玫瑰金.png",
 					"idwatchimg/ropeBig/36mm-金屬米蘭-銀色.png"];
-	}else if(size=="41mm"){
+	}else if(sId=="41mm"){
 		surface = ["idwatchimg/Watchsurface/S面板-面板-太陽紋-銀白.png",
 					"idwatchimg/Watchsurface/S面板-面板-太陽紋-曜黑.png",
 					"idwatchimg/Watchsurface/S面板-簡約白.png",
@@ -285,6 +276,19 @@ function return_zero(){
 	document.getElementById("Imgid3").src=rope[rope_count];
 	document.getElementById("P3").src=ropeB[rope_count];
 }
+
+function imgRadio(sId) {
+    var oImg = document.getElementsByClassName("watchSize");
+
+    for (var i = 0; i < oImg.length; i++) {
+      if (oImg[i].id == sId) {
+        oImg[i].style = 'margin-right: -30px;margin-left: -30px;-webkit-filter: invert(100%);filter: invert(100%);';
+      } else {
+        oImg[i].style = 'margin-right: -30px;margin-left: -30px;-webkit-filter: invert(0%);filter: invert(0%);';
+      }
+    }
+	
+  }
 //判斷選配後的網址
 function goidwatch(){
 	var fm = document.getElementById("form1");
@@ -519,12 +523,8 @@ font-family: Microsoft JhengHei;
             </td>
           </tr>
           <tr>
-            <td style="text-align:center;"><input type="radio" name="wsize" value="36mm" onchange="sizechange();" checked="true" />36mm</td>
-            <td style="text-align:center;"><input type="radio" name="wsize" value="41mm" onchange="sizechange();" />41mm</td>
-          </tr>
-          <tr>
-            <td style="text-align:center;"><img width="100%" src="idwatchimg/%E5%B0%BA%E5%AF%B836mm.png" style="margin-right: -20px;" /></td>
-            <td style="text-align:center;"><img width="100%" src="idwatchimg/%E5%B0%BA%E5%AF%B841mm.png" style="margin-left: -20px;" /></td>
+            <td style="text-align:center;"><img id="36mm" class="watchSize" width="100%" src="idwatchimg/%E5%B0%BA%E5%AF%B836mm.png" style="margin-right: -30px;" onclick="imgRadio(this.id),sizechange(this.id)" /></td>
+            <td style="text-align:center;"><img id="41mm" class="watchSize" width="100%" src="idwatchimg/%E5%B0%BA%E5%AF%B841mm.png" style="margin-left: -30px;" onclick="imgRadio(this.id),sizechange(this.id)" /></td>
           </tr>
         </table>
       </td>
