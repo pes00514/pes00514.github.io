@@ -62,7 +62,10 @@ setTimeout("sss()",50)
 	document.getElementById("P2").style.left=l;
 	document.getElementById("P3").style.top=t;
 	document.getElementById("P3").style.left=l;
-	document.getElementsByClassName("my1").style.fontSize = parseInt(26)+"px";
+	var my1c = document.getElementsByClassName("my1");
+		for(var i=0;i<myc1.length;i++){
+		  my1c[i].style.fontSize = parseInt(screen.width/screen.height*10.97)+"px";
+		}
 	sizechange();
 	//document.getElementById("GOtext").style.top = document.getElementById("GOtext").offsetTop*-4/100;
 	//document.getElementById("ID").style.left=document.getElementById("green").offsetLeft;
