@@ -38,7 +38,7 @@ var ropeB;
 var surface_count=0;
 var shell_count=0;
 var rope_count = 0;
-
+var size="36mm";
 
 
 
@@ -63,7 +63,8 @@ setTimeout("sss()",50)
 	document.getElementById("P3").style.top=t;
 	document.getElementById("P3").style.left=l;
 	document.getElementById("GOtext").style.top = document.getElementById("green").offsetTop*-4/100;
-	sizechange("36mm");
+	sizechange(size);
+	imgRadio(size);
 	//document.getElementById("GOtext").style.top = document.getElementById("GOtext").offsetTop*-4/100;
 	//document.getElementById("ID").style.left=document.getElementById("green").offsetLeft;
 	//document.getElementById("ID").style.top=document.getElementById("green").offsetTop+60;
@@ -284,11 +285,11 @@ function imgRadio(sId) {
         oImg[i].style = 'margin-right: -30px;margin-left: -30px;-webkit-filter: invert(0%);filter: invert(0%);';
       }
     }
-	
+	size=sId;
   }
 //判斷選配後的網址
 function goidwatch(){
-	var fm = document.getElementById("form1");
+	/*var fm = document.getElementById("form1");
 	var size;
 	var go_href;
 	for (var i=0; i<fm.wsize.length; i++)
@@ -298,7 +299,7 @@ function goidwatch(){
 		  size = fm.wsize[i].value;
 		  break;
 	   }
-	}
+	}*/
 	if(size=="41mm"){
 		if(ropeB[rope_count]=="idwatchimg/ropeBig/41mm皮-紅褐.png"){
 			if(shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-銀色.png"||shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-玫瑰金.png"||shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-亮黑.png"){
