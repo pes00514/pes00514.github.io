@@ -46,12 +46,12 @@ setTimeout("sss()",50)
 
 	function sss()
 	{
-	document.getElementById("P1").width = screen.width*250/screen.height;
-	document.getElementById("P1").height = screen.width*250/screen.height;
-	document.getElementById("P2").width = screen.width*250/screen.height;
-	document.getElementById("P2").height = screen.width*250/screen.height;
-	document.getElementById("P3").width = screen.width*250/screen.height;
-	document.getElementById("P3").height = screen.width*250/screen.height;
+	document.getElementById("P1").width = screen.width*220/screen.height;
+	document.getElementById("P1").height = screen.width*220/screen.height;
+	document.getElementById("P2").width = screen.width*220/screen.height;
+	document.getElementById("P2").height = screen.width*220/screen.height;
+	document.getElementById("P3").width = screen.width*220/screen.height;
+	document.getElementById("P3").height = screen.width*220/screen.height;
 	var P ="imgp";
 	var t = screen.width*(document.getElementById(P).offsetTop*-140)/2560;
 	//t=-2.35*document.getElementById(P).offsetTop
@@ -68,9 +68,10 @@ setTimeout("sss()",50)
 		}
 	sizechange(size);
 	imgRadio(size);
-	//document.getElementById("GOtext").style.top = document.getElementById("GOtext").offsetTop*-4/100;
-	//document.getElementById("ID").style.left=document.getElementById("green").offsetLeft;
-	//document.getElementById("ID").style.top=document.getElementById("green").offsetTop+60;
+	document.getElementById("green").style.left = document.getElementById("facebook").offsetLeft;
+	document.getElementById("green").style.top = document.getElementById("facebook").offsetTop-400;
+	document.getElementById("ID").style.left=document.getElementById("green").offsetLeft;
+	document.getElementById("ID").style.top=document.getElementById("green").offsetTop-400;
 	
 	//alert(t+","+l);
 	for(var i=0;i<surface.length;i++){
@@ -467,9 +468,9 @@ font-family: Microsoft JhengHei;
   <table border="0" width='90%' align="center">
     <tr>
       <td style="width:36%;text-align:left;">
-        <div class="my1">&#160;&#160;&#160; &lt;&#160;指針設計字型參考/Font reference&#160;&gt;
+        <div class="my1">&lt;&#160;指針設計字型參考/Font reference&#160;&gt;
         <br />
-        <br />&#160;&#160;&#160; 製作英文名：
+        <br />製作英文名：
         <input id="name" type="text" placeholder="製作建議八字以內" maxlength="10" style="font-size:26px;width:250px;" /> 
         <input type="button" value="Enter" onclick="Enter()" /></div>
       </td>
@@ -559,7 +560,7 @@ font-family: Microsoft JhengHei;
       <td width="25%" style="text-align:center;vertical-align:middle;" valign="center">
         
 		<a href="#" title="IDwatch" style="color:blue;text-decoration:none;font-weight:bold;font-family: Microsoft JhengHei;font-size:20px;"onclick="goidwatch()">
-        <img src="idwatchimg/GO.png" width="15%" /><span id="GOtext" style="position:relative;">&#160;&gt;&#160;&gt;&#160;&gt;&#160;&#160;https://www.idwatch.me/</span>
+        <img src="idwatchimg/GO.png" width="15%" /><span id="GOtext" style="position:relative;">www.idwatch.me</span>
 		</a>
       </td>
     </tr>
