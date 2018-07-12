@@ -1,4 +1,4 @@
-﻿﻿<html>
+﻿<html>
   <head>
     <meta name="generator"
     content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
@@ -13,8 +13,8 @@ flag=true;
 }
 return flag;
 }
-if(checkserAgent()){
-document.location.href="https://pes00514.github.io/index_m_test.html";
+if(!checkserAgent()){
+document.location.href="https://pes00514.github.io/index_test.html";
 }
 </script>
 	
@@ -46,32 +46,28 @@ setTimeout("sss()",50)
 
 	function sss()
 	{
-	document.getElementById("P1").width = screen.width*220/screen.height;
-	document.getElementById("P1").height = screen.width*220/screen.height;
-	document.getElementById("P2").width = screen.width*220/screen.height;
-	document.getElementById("P2").height = screen.width*220/screen.height;
-	document.getElementById("P3").width = screen.width*220/screen.height;
-	document.getElementById("P3").height = screen.width*220/screen.height;
+	document.getElementById("P1").width = document.getElementById("36mm").width+100;
+	document.getElementById("P1").height = document.getElementById("36mm").width+100;
+	document.getElementById("P2").width = document.getElementById("36mm").width+100;
+	document.getElementById("P2").height = document.getElementById("36mm").width+100;
+	document.getElementById("P3").width = document.getElementById("36mm").width+100;
+	document.getElementById("P3").height = document.getElementById("36mm").width+100;
 	var P ="imgp";
-	var t = document.getElementById("41mm").style.top-150;
+	var t = document.getElementById("36mm").style.top-100;
 	//t=-2.35*document.getElementById(P).offsetTop
-	var l = document.getElementById("41mm").style.left-30;
+	var l = document.getElementById("36mm").style.left;
 	document.getElementById("P1").style.top=t;
 	document.getElementById("P1").style.left=l;
 	document.getElementById("P2").style.top=t;
 	document.getElementById("P2").style.left=l;
 	document.getElementById("P3").style.top=t;
 	document.getElementById("P3").style.left=l;
-	var my1c = document.getElementsByClassName("my1");
-		for(var i=0;i<my1c.length;i++){
-		  my1c[i].style.fontSize = parseInt(screen.width/screen.height*10.97)+"px";
-		}
+	document.getElementById("GOtext").style.top = document.getElementById("green").offsetTop*-4/100;
 	sizechange(size);
 	imgRadio(size);
-	document.getElementById("green").style.left = document.getElementById("facebook").style.left;
-	document.getElementById("green").style.top = document.getElementById("facebook").offsetTop+60;
-	document.getElementById("ID").style.left=document.getElementById("green").style.left;
-	document.getElementById("ID").style.top=document.getElementById("green").offsetTop+60;
+	//document.getElementById("GOtext").style.top = document.getElementById("GOtext").offsetTop*-4/100;
+	//document.getElementById("ID").style.left=document.getElementById("green").offsetLeft;
+	//document.getElementById("ID").style.top=document.getElementById("green").offsetTop+60;
 	
 	//alert(t+","+l);
 	for(var i=0;i<surface.length;i++){
@@ -559,7 +555,7 @@ z-index:1;
 }
 div.my1 {
 font-family: Microsoft JhengHei;
-//font-size:26px;
+font-size:14px;
 }
 
 </style>
@@ -575,21 +571,22 @@ font-family: Microsoft JhengHei;
   <div class="my1" align="right">You are my important start&#160;&gt;&#160;&gt;&#160;&gt;&#160;&#160;</div>
   <!--<img id="important" border="0" src="idwatchimg/important.png" align="right" />-->
   <hr size="2" align="center" noshade="noshade" width="90%" color="#000000" />
-  
+  <br />
   <a href="http://line.naver.jp/ti/p/@jix1367x" title="歡迎+Line">
     <img id="green" border="0" width="50" height="50" src="idwatchimg/green.jpg" align="right" />
   </a>
-    <br style="line-height:57px;" />
+  <br style="line-height:60px;" />
   <a href="https://www.idwatch.me/" title="IDwatch">
     <img id="ID" border="0" width="50" height="50" src="idwatchimg/ID.png" align="right" />
   </a>
-  <table border="0" width='90%' align="center">
+  <table border="0" width='90%' align="left">
     <tr>
       <td style="width:36%;text-align:left;">
-        <div class="my1">&lt;&#160;指針設計字型參考/Font reference&#160;&gt;
+        <div class="my1">&#160;&#160;&#160;&#160;&#160; &lt;&#160;指針設計字型參考&#160;&gt;<br />
+		&#160;&#160;&#160;&#160;&#160; &lt;&#160;Font reference&#160;&gt;
         <br />
-        <br />製作英文名：
-        <input id="name" type="text" placeholder="製作建議八字以內" maxlength="10" style="font-size:20px;width:200px;" /> 
+        <br />&#160;&#160;&#160;&#160;&#160; 製作英文名：<br/>&#160;&#160;&#160;&#160;&#160;
+        <input id="name" type="text" placeholder="製作建議八字以內" maxlength="10" style="font-size:20px" size="12px"/><br/> &#160;&#160;&#160;&#160;&#160;
         <input type="button" value="Enter" onclick="Enter()" /></div>
       </td>
       <td style="width:13.5%;text-align:center;vertical-align:text-top;border-right:1px solid #000000">
@@ -598,7 +595,7 @@ font-family: Microsoft JhengHei;
         <br />標準簡約
         <br />
         <br />
-        <input id="fontone" style="font-family:CANDARA;font-size:26px;border: none;text-align:center;width:200px;" type="text"
+        <input id="fontone" style="font-family:CANDARA;font-size:24px;border: none;text-align:center;width:140px;"  type="text"
         value="Shaing" /></div>
       </td>
       <td style="width:13.5%;text-align:center;vertical-align:text-top;border-right:1px solid #000000">
@@ -607,7 +604,7 @@ font-family: Microsoft JhengHei;
         <br />流風曲線
         <br />
         <br />
-        <input id="fonttwo" style="font-family:Anothershabby_trial;font-size:26px;border: none;text-align:center;width:200px;" 
+        <input id="fonttwo" style="font-family:Anothershabby_trial;font-size:24px;border: none;text-align:center;width:140px;" 
         type="text" value="Shaing" /></div>
       </td>
       <td style="width:13.5%;text-align:center;vertical-align:text-top;border-right:1px solid #000000">
@@ -616,7 +613,7 @@ font-family: Microsoft JhengHei;
         <br />藝術草行
         <br />
         <br />
-        <input id="fontthree" style="font-family:JaneAust;font-size:26px;border: none;text-align:center;width:200px;" type="text"
+        <input id="fontthree" style="font-family:JaneAust;font-size:20px;border: none;text-align:center;width:140px;" type="text"
         value="Shaing" /></div>
       </td>
       <td style="width:13.5%;text-align:center;vertical-align:text-top;">
@@ -625,7 +622,7 @@ font-family: Microsoft JhengHei;
         <br />雅緻風藝
         <br />
         <br />
-        <input id="fontfour" style="font-family:AlexBrush-Regular;font-size:26px;border: none;text-align:center;width:200px;" 
+        <input id="fontfour" style="font-family:AlexBrush-Regular;font-size:24px;border: none;text-align:center;width:140px;"
         type="text" value="Shaing" /></div>
       </td>
     </tr>
@@ -639,7 +636,8 @@ font-family: Microsoft JhengHei;
         <table border="0" width="100%"  align="center" >
           <tr>
             <td colspan="2" style="text-align:center;">
-              <div class="my1">&lt;&#160;尺寸選擇/Size selection&#160;&gt;</div>
+              <div class="my1">&lt;&#160;尺寸選擇&#160;&gt;<br/>
+			  &lt;&#160;Size selection&#160;&gt;</div>
             </td>
           </tr>
           <tr>
@@ -653,26 +651,26 @@ font-family: Microsoft JhengHei;
         <img id="P1" border="0" src="idwatchimg/surfaceBig/36mm-%E9%9D%A2%E6%9D%BF-%E7%B0%A1%E7%B4%84%E7%99%BD.png"
         align="center" style="top:-9999;left:-9999"/> 
         <img id="P2" border="0" src="idwatchimg/shellBig/36mm-%E9%8C%B6%E6%AE%BC-%E9%8A%80%E8%89%B2.png" width="650" height="650"
-        align="center" style="top:-9999;left:-9999" /> 
+        align="center" style="top:-9999;left:-9999"/> 
         <img id="P3" border="0" src="idwatchimg/ropeBig/36mm%E7%9A%AE-%E7%B4%85%E8%A4%90.png" width="650" height="650"
-        align="center" style="top:-9999;left:-9999" /></div>
+        align="center" style="top:-9999;left:-9999"/></div>
       </td>
       <td width="25%" style="text-align:center;vertical-align:middle;">
       <!--錶面-->
       <input type="button" value="&lt;" onclick="surfaceprevious()" /> 
-      <img id="Imgid1" border="0" src="idwatchimg/Watchsurface/S%E9%9D%A2%E6%9D%BF-%E7%B0%A1%E7%B4%84%E7%99%BD.png" width="30%"
+      <img id="Imgid1" border="0" src="idwatchimg/Watchsurface/S%E9%9D%A2%E6%9D%BF-%E7%B0%A1%E7%B4%84%E7%99%BD.png" width="33%"
       display:none="" /> 
       <input type="button" value="&gt;" onclick="surfacenext()" />
       <br />
       <!--錶框-->
       <input type="button" value="&lt;" onclick="shellprevious()" /> 
-      <img id="Imgid2" border="0" src="idwatchimg/Watchshell/S%E9%8C%B6%E6%AE%BC-%E9%8A%80%E8%89%B2.png" width="30%"
+      <img id="Imgid2" border="0" src="idwatchimg/Watchshell/S%E9%8C%B6%E6%AE%BC-%E9%8A%80%E8%89%B2.png" width="33%"
       display:none="" /> 
       <input type="button" value="&gt;" onclick="shellnext()" />
       <br />
       <!--錶帶-->
       <input type="button" value="&lt;" onclick="ropeprevious()" /> 
-      <img id="Imgid3" border="0" src="idwatchimg/rope/S%E7%9A%AE-%E7%B4%85%E8%A4%90.png" width="30%" display:none="" /> 
+      <img id="Imgid3" border="0" src="idwatchimg/rope/S%E7%9A%AE-%E7%B4%85%E8%A4%90.png" width="33%" display:none="" /> 
       <input type="button" value="&gt;" onclick="ropenext()" />
 	  </td>
       <td width="25%" style="text-align:center;vertical-align:middle;" valign="center">
