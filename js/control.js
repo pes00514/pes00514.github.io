@@ -105,6 +105,8 @@ function shellprevious(){
 	}else if(shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-亮黑.png"){
 		surface = ["idwatchimg/Watchsurface/S面板-面板-太陽紋-銀白.png",
 					"idwatchimg/Watchsurface/S面板-面板-太陽紋-曜黑.png",
+					"idwatchimg/Watchsurface/S面板-簡約白.png",
+					"idwatchimg/Watchsurface/S面板-簡約黑.png",
 					"idwatchimg/Watchsurface/S面板-面板-太陽紋-翠綠.png",
 					"idwatchimg/Watchsurface/S面板-面板-太陽紋-寶藍.png",
 					"idwatchimg/Watchsurface/S面板-數字藍.png",
@@ -112,13 +114,15 @@ function shellprevious(){
 					"idwatchimg/Watchsurface/S面板-羅馬黑.png"];
 		surfaceB =["idwatchimg/surfaceBig/41mm-面板-太陽紋-銀白.png",
 					"idwatchimg/surfaceBig/41mm-面板-太陽紋-曜黑.png",
+					"idwatchimg/surfaceBig/41mm-面板-簡約白.png",
+					"idwatchimg/surfaceBig/41mm-面板-簡約黑.png",
 					"idwatchimg/surfaceBig/41mm-面板-太陽紋-翠綠.png",
 					"idwatchimg/surfaceBig/41mm-面板-太陽紋-寶藍.png",
 					"idwatchimg/surfaceBig/41mm-面板-數字藍.png",
 					"idwatchimg/surfaceBig/41mm-面板-羅馬白.png",
 					"idwatchimg/surfaceBig/41mm-面板-羅馬黑.png"];
-		surface_count = surface.length-1;
-		surfacenext();
+		//surface_count = surface.length-1;
+		//surfacenext();
 	
 	}else if(shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-玫瑰金.png"){
 		surface = ["idwatchimg/Watchsurface/S面板-面板-太陽紋-銀白.png",

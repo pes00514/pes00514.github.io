@@ -41,10 +41,7 @@ var rope_count = 0;
 var size="36mm";
 
 
-
-setTimeout("sss()",50)
-
-	function sss()
+	function set()
 	{
 	document.getElementById("P1").width = document.getElementById("36mm").width+100;
 	document.getElementById("P1").height = document.getElementById("36mm").width+100;
@@ -143,7 +140,7 @@ font-size:14px;
 
 </style>
   </head>
-  <body>
+  <body onload="set()">
   <form id="form1">
     <h1  align="center">ID.watch | <a style="font-size:28px;">Important Dawn</a></h1>
   
