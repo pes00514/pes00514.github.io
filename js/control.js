@@ -1,5 +1,5 @@
-	var preloadImg_count =0;
-	var img = new Array()
+var preloadImg_count =0;
+var img = new Array()
 function preloadImg(image) {//預載圖片
    img[preloadImg_count] = new Image();
    img[preloadImg_count].src = path+image;
