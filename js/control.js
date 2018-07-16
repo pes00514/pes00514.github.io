@@ -409,7 +409,7 @@ function goidwatch(){
 		}else if(ropeB[rope_count]=="idwatchimg/ropeBig/36mm-金屬米蘭-黑鋼.png"){
 			if(shellB[shell_count]=="idwatchimg/shellBig/36mm-錶殼-銀色.png"||shellB[shell_count]=="idwatchimg/shellBig/36mm-錶殼-玫瑰金.png"||shellB[shell_count]=="idwatchimg/shellBig/36mm-錶殼-亮黑.png"){
 				if(surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-簡約白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-簡約黑.png"){
-					location.href='';
+					location.href='https://goo.gl/hvo66f';
 				}else if(surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-太陽紋面板-銀白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-太陽紋面板-曜黑.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-太陽紋面板-寶藍.png"){
 					location.href='https://goo.gl/KVWhcx';
 				}else if(surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-羅馬白 -.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-羅馬黑.PNG"){
