@@ -6,8 +6,6 @@ function preloadImg(image) {//預載圖片
    preloadImg_count++;
   }
 
-
-	
 function Enter(){
 var ename =document.getElementById("name").value;
 document.getElementById("fontone").value = ename;
