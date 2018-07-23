@@ -6,6 +6,8 @@ function preloadImg(image) {//預載圖片
    preloadImg_count++;
   }
 
+
+	
 function Enter(){
 var ename =document.getElementById("name").value;
 document.getElementById("fontone").value = ename;
@@ -16,20 +18,22 @@ document.getElementById("fontfour").value = ename;
 
 //選擇表面後的錶框組成
 function setShell(){
-	if(surfaceB[surface_count].indexOf("太陽紋")>0){
-		shell = ["idwatchimg/Watchshell/S錶殼-玫瑰金.png",
-					"idwatchimg/Watchshell/S錶殼-亮黑.PNG"];
-		shellB = ["idwatchimg/shellBig/41mm-錶殼-玫瑰金.png",
-					"idwatchimg/shellBig/41mm-錶殼-亮黑.png"];
-		shell_count = shell.length-1;
-		shellnext();
-	}else{
-		shell = ["idwatchimg/Watchshell/S錶殼-玫瑰金.png",
-					"idwatchimg/Watchshell/S錶殼-亮黑.PNG",
-					"idwatchimg/Watchshell/S錶殼-銀色.png"];
-		shellB = ["idwatchimg/shellBig/41mm-錶殼-玫瑰金.png",
-					"idwatchimg/shellBig/41mm-錶殼-亮黑.png",
-					"idwatchimg/shellBig/41mm-錶殼-銀色.png"];
+	if(surfaceB[surface_count].indexOf("41mm")>0){
+		if(surfaceB[surface_count].indexOf("太陽紋")>0){
+			shell = ["idwatchimg/Watchshell/S錶殼-玫瑰金.png",
+						"idwatchimg/Watchshell/S錶殼-亮黑.PNG"];
+			shellB = ["idwatchimg/shellBig/41mm-錶殼-玫瑰金.png",
+						"idwatchimg/shellBig/41mm-錶殼-亮黑.png"];
+			shell_count = shell.length-1;
+			shellnext();
+		}else{
+			shell = ["idwatchimg/Watchshell/S錶殼-玫瑰金.png",
+						"idwatchimg/Watchshell/S錶殼-亮黑.PNG",
+						"idwatchimg/Watchshell/S錶殼-銀色.png"];
+			shellB = ["idwatchimg/shellBig/41mm-錶殼-玫瑰金.png",
+						"idwatchimg/shellBig/41mm-錶殼-亮黑.png",
+						"idwatchimg/shellBig/41mm-錶殼-銀色.png"];
+		}
 	}
 }
 
