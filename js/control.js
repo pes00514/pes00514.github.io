@@ -5,8 +5,6 @@ function preloadImg(image) {//預載圖片
    img[preloadImg_count].src = path+image;
    preloadImg_count++;
   }
-
-
 	
 function Enter(){
 var ename =document.getElementById("name").value;
