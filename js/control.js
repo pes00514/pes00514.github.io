@@ -217,13 +217,23 @@ function sizechange(sId){
 				"idwatchimg/rope/S皮-粉色(近膚色的淺粉).png",
 				"idwatchimg/rope/S金屬米蘭-玫瑰金.png",
 				"idwatchimg/rope/S金屬米蘭-銀色.png",
-				"idwatchimg/rope/S金屬米蘭-黑鋼.png"];
+				"idwatchimg/rope/S金屬米蘭-黑鋼.png",
+				"idwatchimg/rope/S快拆皮革-36小白 - new.png",
+				"idwatchimg/rope/S快拆皮革-36深灰- new.png",
+				"idwatchimg/rope/S快拆皮革-36深藍 - new.png",
+				"idwatchimg/rope/S快拆皮革-36淺綠灰 - new.png",
+				"idwatchimg/rope/S快拆皮革-36淺藍灰 - new.png"];
 		ropeB = ["idwatchimg/ropeBig/36mm皮-沉黑.png",
 					"idwatchimg/ropeBig/36mm皮-紅褐.png",
 					"idwatchimg/ropeBig/36mm皮-粉色(近膚色的淺粉).png",
 					"idwatchimg/ropeBig/36mm-金屬米蘭-玫瑰金.png",
 					"idwatchimg/ropeBig/36mm-金屬米蘭-銀色.png",
-					"idwatchimg/ropeBig/36mm-金屬米蘭-黑鋼.png"];
+					"idwatchimg/ropeBig/36mm-金屬米蘭-黑鋼.png",
+					"idwatchimg/ropeBig/36mm皮-白.png",
+					"idwatchimg/ropeBig/36mm皮-深灰.png",
+					"idwatchimg/ropeBig/36mm皮-深藍.png",
+					"idwatchimg/ropeBig/36mm皮-淺綠灰.png",
+					"idwatchimg/ropeBig/36mm皮-淺藍灰.png"];
 	}else if(sId=="41mm"){
 		surface = ["idwatchimg/Watchsurface/S面板-簡約白.png",
 					"idwatchimg/Watchsurface/S面板-簡約黑.png",
@@ -255,14 +265,24 @@ function sizechange(sId){
 				"idwatchimg/rope/S皮-瘋馬褐.png",
 				"idwatchimg/rope/S金屬米蘭-玫瑰金.png",
 				"idwatchimg/rope/S金屬米蘭-黑鋼.png",
-				"idwatchimg/rope/S金屬米蘭-銀色.png"];
+				"idwatchimg/rope/S金屬米蘭-銀色.png",
+				"idwatchimg/rope/S快拆皮革-41大白- new.png",
+				"idwatchimg/rope/S快拆皮革-41深灰- new.png",
+				"idwatchimg/rope/S快拆皮革-41深藍 - new.png",
+				"idwatchimg/rope/S快拆皮革-41淺綠灰- new.png",
+				"idwatchimg/rope/S快拆皮革-41淺藍灰- new.png"];
 		ropeB = ["idwatchimg/ropeBig/41mm皮-沉黑.png",
 					"idwatchimg/ropeBig/41mm皮-紅褐.png",
 					"idwatchimg/ropeBig/41mm皮-粉色(近膚色的淺粉).png",
 					"idwatchimg/ropeBig/41mm皮-瘋馬褐.png",
 					"idwatchimg/ropeBig/41mm-金屬米蘭-玫瑰金.png",
 					"idwatchimg/ropeBig/41mm-金屬米蘭-黑鋼.png",
-					"idwatchimg/ropeBig/41mm-金屬米蘭-銀色.png"];
+					"idwatchimg/ropeBig/41mm-金屬米蘭-銀色.png",
+					"idwatchimg/ropeBig/41mm皮-白.png",
+					"idwatchimg/ropeBig/41mm皮-深灰.png",
+					"idwatchimg/ropeBig/41mm皮-深藍.png",
+					"idwatchimg/ropeBig/41mm皮-淺綠灰.png",
+					"idwatchimg/ropeBig/41mm皮-淺藍灰.png"];
 	}
 	return_zero();
 }
@@ -375,6 +395,56 @@ function goidwatch(){
 					location.href='https://goo.gl/6Y3ELc';
 				}
 			}
+		}else if(ropeB[rope_count]=="idwatchimg/ropeBig/41mm皮-深藍.png"){
+			if(shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-銀色.png"||shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-玫瑰金.png"||shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-亮黑.png"){
+				if(surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-簡約白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-簡約黑.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-數字藍.png"){
+					location.href='https://goo.gl/jmBr92';
+				}else if(surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-太陽紋-銀白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-太陽紋-曜黑.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-太陽紋-寶藍.png"){
+					location.href='https://goo.gl/zw9z1S';
+				}else if(surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-羅馬白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-羅馬黑.png"){
+					location.href='https://goo.gl/6dJaEP';
+				}
+			}
+		}else if(ropeB[rope_count]=="idwatchimg/ropeBig/41mm皮-淺藍灰.png"){
+			if(shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-銀色.png"||shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-玫瑰金.png"||shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-亮黑.png"){
+				if(surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-簡約白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-簡約黑.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-數字藍.png"){
+					location.href='https://goo.gl/jmBr92';
+				}else if(surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-太陽紋-銀白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-太陽紋-曜黑.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-太陽紋-寶藍.png"){
+					location.href='https://goo.gl/Pd4FVT';
+				}else if(surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-羅馬白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-羅馬黑.png"){
+					location.href='https://goo.gl/eH5Bvq';
+				}
+			}
+		}else if(ropeB[rope_count]=="idwatchimg/ropeBig/41mm皮-淺綠灰.png"){
+			if(shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-銀色.png"||shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-玫瑰金.png"||shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-亮黑.png"){
+				if(surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-簡約白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-簡約黑.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-數字藍.png"){
+					location.href='https://goo.gl/fzeLVs';
+				}else if(surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-太陽紋-銀白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-太陽紋-曜黑.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-太陽紋-寶藍.png"){
+					location.href='https://goo.gl/Ngiz1L';
+				}else if(surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-羅馬白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-羅馬黑.png"){
+					location.href='https://goo.gl/eC99B5';
+				}
+			}
+		}else if(ropeB[rope_count]=="idwatchimg/ropeBig/41mm皮-深灰.png"){
+			if(shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-銀色.png"||shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-玫瑰金.png"||shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-亮黑.png"){
+				if(surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-簡約白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-簡約黑.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-數字藍.png"){
+					location.href='https://goo.gl/C32zPW';
+				}else if(surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-太陽紋-銀白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-太陽紋-曜黑.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-太陽紋-寶藍.png"){
+					location.href='https://goo.gl/ktW6FX';
+				}else if(surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-羅馬白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-羅馬黑.png"){
+					location.href='https://goo.gl/WNN2xN';
+				}
+			}
+		}else if(ropeB[rope_count]=="idwatchimg/ropeBig/41mm皮-白.png"){
+			if(shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-銀色.png"||shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-玫瑰金.png"||shellB[shell_count]=="idwatchimg/shellBig/41mm-錶殼-亮黑.png"){
+				if(surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-簡約白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-簡約黑.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-數字藍.png"){
+					location.href='https://goo.gl/enHNj1';
+				}else if(surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-太陽紋-銀白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-太陽紋-曜黑.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-太陽紋-寶藍.png"){
+					location.href='https://goo.gl/2TjfnP';
+				}else if(surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-羅馬白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-羅馬黑.png"){
+					location.href='https://goo.gl/Wawsb3';
+				}
+			}
 		}
 		if(surfaceB[surface_count]=="idwatchimg/surfaceBig/41mm-面板-太陽紋-翠綠.png"){
 			location.href='https://goo.gl/yTh9su';
@@ -440,6 +510,56 @@ function goidwatch(){
 					location.href='https://goo.gl/KVWhcx';
 				}else if(surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-羅馬白 -.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-羅馬黑.PNG"){
 					location.href='https://goo.gl/AdU1f4';
+				}
+			}
+		}else if(ropeB[rope_count]=="idwatchimg/ropeBig/36mm皮-白.png"){
+			if(shellB[shell_count]=="idwatchimg/shellBig/36mm-錶殼-銀色.png"||shellB[shell_count]=="idwatchimg/shellBig/36mm-錶殼-玫瑰金.png"||shellB[shell_count]=="idwatchimg/shellBig/36mm-錶殼-亮黑.png"){
+				if(surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-簡約白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-簡約黑.png"){
+					location.href='https://goo.gl/FPAfJj';
+				}else if(surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-太陽紋面板-銀白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-太陽紋面板-曜黑.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-太陽紋面板-寶藍.png"){
+					location.href='https://goo.gl/jaL33s';
+				}else if(surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-羅馬白 -.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-羅馬黑.PNG"){
+					location.href='https://goo.gl/Jf5PBJ';
+				}
+			}
+		}else if(ropeB[rope_count]=="idwatchimg/ropeBig/36mm皮-深灰.png"){
+			if(shellB[shell_count]=="idwatchimg/shellBig/36mm-錶殼-銀色.png"||shellB[shell_count]=="idwatchimg/shellBig/36mm-錶殼-玫瑰金.png"||shellB[shell_count]=="idwatchimg/shellBig/36mm-錶殼-亮黑.png"){
+				if(surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-簡約白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-簡約黑.png"){
+					location.href='https://goo.gl/Dg5AWg';
+				}else if(surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-太陽紋面板-銀白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-太陽紋面板-曜黑.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-太陽紋面板-寶藍.png"){
+					location.href='https://goo.gl/f5r5y6';
+				}else if(surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-羅馬白 -.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-羅馬黑.PNG"){
+					location.href='https://goo.gl/VMuXxf';
+				}
+			}
+		}else if(ropeB[rope_count]=="idwatchimg/ropeBig/36mm皮-深藍.png"){
+			if(shellB[shell_count]=="idwatchimg/shellBig/36mm-錶殼-銀色.png"||shellB[shell_count]=="idwatchimg/shellBig/36mm-錶殼-玫瑰金.png"||shellB[shell_count]=="idwatchimg/shellBig/36mm-錶殼-亮黑.png"){
+				if(surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-簡約白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-簡約黑.png"){
+					location.href='https://goo.gl/EYjcaK';
+				}else if(surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-太陽紋面板-銀白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-太陽紋面板-曜黑.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-太陽紋面板-寶藍.png"){
+					location.href='https://goo.gl/tkdrhZ';
+				}else if(surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-羅馬白 -.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-羅馬黑.PNG"){
+					location.href='https://goo.gl/crjnje';
+				}
+			}
+		}else if(ropeB[rope_count]=="idwatchimg/ropeBig/36mm皮-淺綠灰.png"){
+			if(shellB[shell_count]=="idwatchimg/shellBig/36mm-錶殼-銀色.png"||shellB[shell_count]=="idwatchimg/shellBig/36mm-錶殼-玫瑰金.png"||shellB[shell_count]=="idwatchimg/shellBig/36mm-錶殼-亮黑.png"){
+				if(surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-簡約白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-簡約黑.png"){
+					location.href='https://goo.gl/7qoXae';
+				}else if(surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-太陽紋面板-銀白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-太陽紋面板-曜黑.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-太陽紋面板-寶藍.png"){
+					location.href='https://goo.gl/jSyaiq';
+				}else if(surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-羅馬白 -.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-羅馬黑.PNG"){
+					location.href='https://goo.gl/PxFSeJ';
+				}
+			}
+		}else if(ropeB[rope_count]=="idwatchimg/ropeBig/36mm皮-淺藍灰.png"){
+			if(shellB[shell_count]=="idwatchimg/shellBig/36mm-錶殼-銀色.png"||shellB[shell_count]=="idwatchimg/shellBig/36mm-錶殼-玫瑰金.png"||shellB[shell_count]=="idwatchimg/shellBig/36mm-錶殼-亮黑.png"){
+				if(surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-簡約白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-簡約黑.png"){
+					location.href='https://goo.gl/wWcJsr';
+				}else if(surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-太陽紋面板-銀白.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-太陽紋面板-曜黑.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-太陽紋面板-寶藍.png"){
+					location.href='https://goo.gl/FKVmZB';
+				}else if(surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-羅馬白 -.png"||surfaceB[surface_count]=="idwatchimg/surfaceBig/36mm-面板-羅馬黑.PNG"){
+					location.href='https://goo.gl/42k6nH';
 				}
 			}
 		}
