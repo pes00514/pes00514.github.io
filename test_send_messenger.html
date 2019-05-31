@@ -1,0 +1,38 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="Head1" runat="server">
+</head>
+<body class="lang-tw">
+<script>
+	window.fbAsyncInit = function () {
+		FB.init({
+			appId: '359007038144636',
+			autoLogAppEvents: true,
+			xfbml: true,
+			version: 'v3.3'
+		});
+	};
+</script>
+<script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+	<form id="form1" runat="server">
+		<div class="fb-send-to-messenger" 
+		messenger_app_id="359007038144636" 
+		page_id="2106113046353358" 
+		color="blue" 
+		size="large">
+		</div>
+		<script>
+
+			FB.Event.subscribe('send_to_messenger', function (e) {
+			// callback for events triggered by the plugin
+
+			});
+
+		</script>
+	</form>
+
+
+
+</body>
+</html>
