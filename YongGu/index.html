@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : Wide-Range 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20140315
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+<!--[if IE 6]>
+<link href="default_ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+</head>
+<body>
+<div id="wrapper">
+
+</div>
+
+<div id="footer">
+	<p>&copy; Untitled. All rights reserved. Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>. Photos by <a href="http://fotogrph.com/">Fotogrph</a>.</p>
+</div>
+
+<script src="js/jquery-1.12.4.min.js"></script>
+<script>
+//先取得網址字串，假設此頁網址為「index.aspx?id=U001&name=GQSM」
+var url = location.href;
+
+var id = "0";
+
+//再來用去尋找網址列中是否有資料傳遞(QueryString)
+if(url.indexOf('?')!=-1)
+{
+    
+    //在此直接將各自的參數資料切割放進ary中
+    var ary = url.split('?')[1].split('&');
+    //此時ary的內容為：
+    //ary[0] = 'id=U001'，ary[1] = 'name=GQSM'
+    
+    //下迴圈去搜尋每個資料參數
+    for(i=0;i<=ary.length-1;i++)
+    {
+        //如果資料名稱為id的話那就把他取出來
+        if(ary[i].split('=')[0] == 'id')
+            id = ary[i].split('=')[1];
+    }
+    
+}
+
+if(id==0)
+{
+	//引入
+    $.get('home.html', function(data){
+        $('#wrapper').prepend(data);
+    });
+}
+</script>
+</body>
+</html>
