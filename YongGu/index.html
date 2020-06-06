@@ -43,8 +43,8 @@ Released   : 20140315
 		</div>
 		<div id="menu" class="container">
 			<ul>
-				<li class="current_page_item"><a href="#" accesskey="1" title="">Homepage</a></li>
-				<li><a href="#" accesskey="1" title="">Services</a></li>
+				<li class="current_page_item"><a href="index.html?page=home" accesskey="1" title="">Homepage</a></li>
+				<li><a href="index.html?page=introduction" accesskey="1" title="">簡介</a></li>
 				<li><a href="#" accesskey="2" title="">Our Clients</a></li>
 				<li><a href="#" accesskey="3" title="">About Us</a></li>
 				<li><a href="#" accesskey="4" title="">Careers</a></li>
@@ -95,7 +95,7 @@ Released   : 20140315
 //先取得網址字串，假設此頁網址為「index.aspx?id=U001&name=GQSM」
 var url = location.href;
 
-var id = "0";
+var page = "home";
 
 //再來用去尋找網址列中是否有資料傳遞(QueryString)
 if(url.indexOf('?')!=-1)
@@ -111,18 +111,15 @@ if(url.indexOf('?')!=-1)
     {
         //如果資料名稱為id的話那就把他取出來
         if(ary[i].split('=')[0] == 'id')
-            id = ary[i].split('=')[1];
+            page = ary[i].split('=')[1];
     }
     
 }
 
-if(id==0)
-{
-	//引入
-    $.get('home.html', function(data){
-        $('#page').prepend(data);
-    });
-}
+$.get(page+".html",function(data){
+  $('#page').prepend(data);
+});
+
 </script>
 </body>
 </html>
