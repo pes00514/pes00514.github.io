@@ -44,12 +44,12 @@ Released   : 20140315
 		</div>
 		<div id="menu" class="container">
 			<ul>
-				<li class="current_page_item"><a href="index.html?page=home" accesskey="1" title="">首頁</a></li>
-				<li><a href="index.html?page=introduction" accesskey="1" title="">公司簡介</a></li>
-				<li><a href="index.html?page=service_items" accesskey="2" title="">服務項目</a></li>
-				<li><a href="#" accesskey="3" title="">服務實績</a></li>
-				<li><a href="#" accesskey="4" title="">組織架構 </a></li>
-				<li><a href="#" accesskey="5" title="">聯絡我們</a></li>
+				<li id="li_home" class=""><a href="index.html?page=home" accesskey="1" title="">首頁</a></li>
+				<li id="li_introduction"><a href="index.html?page=introduction" accesskey="1" title="">公司簡介</a></li>
+				<li id="li_service_items"><a href="index.html?page=service_items" accesskey="2" title="">服務項目</a></li>
+				<li id="li_1"><a href="#" accesskey="3" title="">服務實績</a></li>
+				<li id="li_2"><a href="#" accesskey="4" title="">組織架構 </a></li>
+				<li id="li_3"><a href="#" accesskey="5" title="">聯絡我們</a></li>
 			</ul>
 		</div>
 	</div>
@@ -91,7 +91,6 @@ Released   : 20140315
 	<p>&copy; Untitled. All rights reserved. Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>. Photos by <a href="http://fotogrph.com/">Fotogrph</a>.</p>
 </div>
 
-<script src="js/jquery-1.12.4.min.js"></script>
 <script>
 //先取得網址字串，假設此頁網址為「index.aspx?id=U001&name=GQSM」
 var url = location.href;
@@ -120,6 +119,8 @@ if(url.indexOf('?')!=-1)
 $.get(page+".html",function(data){
   $('#page').prepend(data);
 });
+
+$("#li"+page).addClass("current_page_item");
 
 </script>
 </body>
