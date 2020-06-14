@@ -93,19 +93,41 @@
 .FloatRightImg img {
     width: 400px;
 }
+.FloatCenterImg {
+    width: auto;
+    max-width: 35%;
+    position: relative;
+	float: right;
+    margin: 4px 0 35px 35px;
+}
+.FloatCenterImg img {
+    width: 400px;
+}
 .procedures {
     width: auto;
-    max-width: 60%;
+    max-width: 80%;
     position: relative;
 }
 .css_table {
       display:table;
+	  margin: 4px 35px 35px 35px;
+	  float: left;
   }
 .css_tr {
       display: table-row;
   }
 .css_td {
       display: table-cell;
+	  border:2px solid #f19f64;
+  }
+.img_td img {
+	  width:350px;
+  }
+.img_td {
+	  width:360px;
+	  height:350px;
+	  text-align:center;
+	  vertical-align: middle;
   }
 </style>
 
@@ -114,53 +136,41 @@
 <div class="qa-wrap ">
 	<a title="展開" class="question" href="javascript:void(0)"><span>1</span><p>企業工廠</p></a>
 	<div class="answer" style="display:block;">
-	<div class="FloatRightImg">
-		<img src="images/service_item1.jpg">
-	</div>
 		<div class="procedures">
 		<div class="css_table">
 			  <div class="css_tr">
 				  <div class="css_td">金像電子公司</div>
 			  </div>
 			  <div class="css_tr">
-				  <div class="css_td"><img src="images/service_performance1.jpg"></div>
+				  <div class="css_td img_td"><img src="images/service_performance1.jpg"></div>
 			  </div>
 		</div>
-		<span class="icon">A</span>
-		<div class="cont">
-			<p>停車場管理</p>
+		
+		<div class="css_table">
+			  <div class="css_tr">
+				  <div class="css_td">合正科技公司</div>
+			  </div>
+			  <div class="css_tr">
+				  <div class="css_td img_td"><img src="images/service_performance2.jpg"></div>
+			  </div>
 		</div>
-		<span class="icon">B</span>
-		<div class="cont">
-			<p>門禁管理</p>
+		
+		<div class="css_table">
+			  <div class="css_tr">
+				  <div class="css_td">亞智一廠</div>
+			  </div>
+			  <div class="css_tr">
+				  <div class="css_td img_td"><img src="images/service_performance3.jpg"></div>
+			  </div>
 		</div>
-		<span class="icon">C</span>
-		<div class="cont">
-			<p>巡邏勤務</p>
-		</div>
-		<span class="icon">D</span>
-		<div class="cont">
-			<p>燈火管制</p>
-		</div>
-		<span class="icon">E</span>
-		<div class="cont">
-			<p>防火措施</p>
-		</div>
-		<span class="icon">F</span>
-		<div class="cont">
-			<p>防災措施</p>
-		</div>
-		<span class="icon">G</span>
-		<div class="cont">
-			<p>防颱措施</p>
-		</div>
-		<span class="icon">H</span>
-		<div class="cont">
-			<p>緊急應變</p>
-		</div>
-		<span class="icon">I</span>
-		<div class="cont">
-			<p>施工管理</p>
+		
+		<div class="css_table">
+			  <div class="css_tr">
+				  <div class="css_td">飛捷科技</div>
+			  </div>
+			  <div class="css_tr">
+				  <div class="css_td img_td"><img src="images/service_performance4.jpg"></div>
+			  </div>
 		</div>
 		</div>
 	</div>
