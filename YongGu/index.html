@@ -20,17 +20,111 @@ Released   : 20140315
 <link href="default.css" rel="stylesheet" type="text/css" media="all" />
 <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
 <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+
+<style>
+       .items {   
+            width: 280px;   
+            height: 150px;   
+            border: 1px solid #ddd;   
+                box-sizing: border-box;   
+                border-radius:10px;   
+                background-size: cover;   
+            -webkit-transform: translateZ(0);   
+            transform: translateZ(0);   
+                background-repeat: no-repeat;   
+            -webkit-animation: slider 15s linear infinite alternate;   
+            animation: slider 15s linear infinite alternate;
+            -webkit-transform-origin: center center;   
+                    transform-origin: center center;   
+  
+        }   
+  
+@keyframes slider {   
+            0% {   
+                background-image: url(images/service_item1.jpg) ;   
+  
+            }   
+            25% {   
+                background-image: url(images/service_item2.jpg) ; 
+  
+            }   
+            50% {   
+                background-image: url(images/service_item3.jpg) ; 
+  
+            }   
+            75% {   
+                background-image: url(images/service_item4.jpg) ;  
+  
+            }   
+            100% {   
+                background-image: url(images/bg.jpg) ;  
+  
+            }   
+        }   
+  
+.slide {
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  background-color: #000;
+}
+.slide > div {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+  animation: slide 25s infinite;
+  opacity: 0;
+}
+.slide > div:nth-child(2) {
+  animation-delay: 5s;
+}
+.slide > div:nth-child(3) {
+  animation-delay: 10s;
+}
+.slide > div:nth-child(4) {
+  animation-delay: 15s;
+}
+.slide > div:nth-child(5) {
+  animation-delay: 20s;
+}
+
+@keyframes slide {
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    transform: scale(1.1);
+  }
+}
+</style>
 <!--[if IE 6]>
 <link href="default_ie6.css" rel="stylesheet" type="text/css" />
 <![endif]-->
 </head>
 <body>
+<div class="slider">  
+        <div class="items"></div>  
+    </div>  
 <div id="wrapper">
+<div class="slide">
+  <div class="header-wrapper" style="background-image:url(https://picsum.photos/400/300?image=989"></div>
+  <div class="header-wrapper" style="background-image:url(https://picsum.photos/400/300?image=990"></div>
+  <div class="header-wrapper" style="background-image:url(https://picsum.photos/400/300?image=991"></div>
+  <div class="header-wrapper" style="background-image:url(https://picsum.photos/400/300?image=957"></div>
+  <div class="header-wrapper" style="background-image:url(https://picsum.photos/400/300?image=993"></div>
+</div>
 	<div id="header-wrapper">
-		<div id="header" class="container">
+		<!--<div id="header" class="container">
 			<div id="logo">
 				<h1><a href="#">永固保全股份有限公司</a></h1>
-				<p>Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a></p>
 			</div>
 			<div id="social">
 				<ul class="contact">
@@ -51,8 +145,9 @@ Released   : 20140315
 				<li id="li_organization"><a href="index.html?page=organization" accesskey="4" title="">組織架構 </a></li>
 				<li id="li_contact_us"><a href="index.html?page=contact_us" accesskey="5" title="">聯絡我們</a></li>
 			</ul>
-		</div>
+		</div>-->
 	</div>
+
 		<div id="page" class="container"></div>
 	<div id="portfolio-wrapper">
 		<div id="portfolio" class="container">
@@ -119,6 +214,11 @@ if(url.indexOf('?')!=-1)
 $.get(page+".html",function(data){
   $('#page').prepend(data);
 });
+
+$.get("header.html",function(data){
+  $('#header-wrapper').prepend(data);
+});
+
 
 $("#li_"+page).addClass("current_page_item");
 
