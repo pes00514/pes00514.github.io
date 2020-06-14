@@ -22,46 +22,7 @@ Released   : 20140315
 <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
 
 <style>
-       .items {   
-            width: 280px;   
-            height: 150px;   
-            border: 1px solid #ddd;   
-                box-sizing: border-box;   
-                border-radius:10px;   
-                background-size: cover;   
-            -webkit-transform: translateZ(0);   
-            transform: translateZ(0);   
-                background-repeat: no-repeat;   
-            -webkit-animation: slider 15s linear infinite alternate;   
-            animation: slider 15s linear infinite alternate;
-            -webkit-transform-origin: center center;   
-                    transform-origin: center center;   
-  
-        }   
-  
-@keyframes slider {   
-            0% {   
-                background-image: url(images/service_item1.jpg) ;   
-  
-            }   
-            25% {   
-                background-image: url(images/service_item2.jpg) ; 
-  
-            }   
-            50% {   
-                background-image: url(images/service_item3.jpg) ; 
-  
-            }   
-            75% {   
-                background-image: url(images/service_item4.jpg) ;  
-  
-            }   
-            100% {   
-                background-image: url(images/bg.jpg) ;  
-  
-            }   
-        }   
-  
+      
 .slide {
   width: 400px;
   height: 300px;
@@ -89,7 +50,7 @@ Released   : 20140315
 .slide > div:nth-child(5) {
   animation-delay: 20s;
 }
- 
+
 @keyframes slide {
   10% {
     opacity: 1;
@@ -216,7 +177,7 @@ $.get(page+".html",function(data){
 });
 
 $.get("header.html",function(data){
-  $('#header-wrapper').prepend(data);
+  $('.header-wrapper').prepend(data);
 });
 
 
