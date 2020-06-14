@@ -20,7 +20,7 @@ Released   : 20140315
 <link href="default.css" rel="stylesheet" type="text/css" media="all" />
 <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
 <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
- 
+
 <style>
       
 .slide {
@@ -180,7 +180,7 @@ if(url.indexOf('?')!=-1)
     
 }*/
 
-function load_page(){
+function load_page(page){
 $.get(page+".html",function(data){
   $('#page').prepend(data);
 });
