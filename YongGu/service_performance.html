@@ -1,0 +1,201 @@
+<style>
+.qa-wrap {
+    float: left;
+    width: 100%;
+    line-height: 30px;
+    margin: 0 0 13px 0;
+    padding: 0;
+}
+.question {
+    float: left;
+    width: 100%;
+    font-weight: bold;
+    color: #333;
+    margin: 0 0 7px 0;
+    padding: 15px 15px;
+    position: relative;
+    background: #fff;
+    border-radius: 4px;
+}
+.answer {
+    margin: 0 auto;
+    width: 100%;
+    float: left;
+    padding: 8px 15px;
+    display: none;
+}
+.answer .icon {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background: #f19f64;
+    color: #fff;
+    text-align: center;
+    border-radius: 100%;
+    line-height: 36px;
+    margin: 0 8px 0 0;
+    vertical-align: top;
+    font-weight: bold;
+    font-size: .9rem;
+}
+.answer .cont {
+    margin: 0;
+    padding-top: 7px;
+    display: inline-block;
+    width: 40%;
+    line-height: 24px;
+}
+.question span {
+    position: absolute;
+    display: inline-block;
+    width: 36px;
+    background: #0498b8;
+    color: #fff;
+    text-align: center;
+    border-radius: 100%;
+    height: 36px;
+    line-height: 36px;
+    margin: 0 8px 0 0;
+    vertical-align: top;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: .9rem;
+}
+.question p {
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+    line-height: 24px;
+    padding: 0 50px;
+}
+.faq-cont strong {
+    float: left;
+    width: 100%;
+    font-size: 1.35rem;
+    margin: 0 0 20px 0;
+}
+.faq-cont strong span {
+    border-radius: 100%;
+    float: left;
+    width: 10px;
+    font-size: 1.4rem;
+    background: #0498b8;
+    height: 10px;
+    margin: 12px 7px 0 0;
+}
+.FloatRightImg {
+    width: auto;
+    max-width: 35%;
+    position: relative;
+	float: right;
+    margin: 4px 0 35px 35px;
+}
+.FloatRightImg img {
+    width: 400px;
+}
+.procedures {
+    width: auto;
+    max-width: 60%;
+    position: relative;
+}
+.css_table {
+      display:table;
+  }
+.css_tr {
+      display: table-row;
+  }
+.css_td {
+      display: table-cell;
+  }
+</style>
+
+<div class="faq-cont row">
+<strong><span></span>服務實績</strong>
+<div class="qa-wrap ">
+	<a title="展開" class="question" href="javascript:void(0)"><span>1</span><p>企業工廠</p></a>
+	<div class="answer" style="display:block;">
+	<div class="FloatRightImg">
+		<img src="images/service_item1.jpg">
+	</div>
+		<div class="procedures">
+		<div class="css_table">
+			  <div class="css_tr">
+				  <div class="css_td">金像電子公司</div>
+			  </div>
+			  <div class="css_tr">
+				  <div class="css_td"><img src="images/service_performance1.jpg"></div>
+			  </div>
+		</div>
+		<span class="icon">A</span>
+		<div class="cont">
+			<p>停車場管理</p>
+		</div>
+		<span class="icon">B</span>
+		<div class="cont">
+			<p>門禁管理</p>
+		</div>
+		<span class="icon">C</span>
+		<div class="cont">
+			<p>巡邏勤務</p>
+		</div>
+		<span class="icon">D</span>
+		<div class="cont">
+			<p>燈火管制</p>
+		</div>
+		<span class="icon">E</span>
+		<div class="cont">
+			<p>防火措施</p>
+		</div>
+		<span class="icon">F</span>
+		<div class="cont">
+			<p>防災措施</p>
+		</div>
+		<span class="icon">G</span>
+		<div class="cont">
+			<p>防颱措施</p>
+		</div>
+		<span class="icon">H</span>
+		<div class="cont">
+			<p>緊急應變</p>
+		</div>
+		<span class="icon">I</span>
+		<div class="cont">
+			<p>施工管理</p>
+		</div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+<script>
+$(".question").click(function(){$(this).next(".answer").slideToggle();$(this).toggleClass("active")});
+</script>
+<!--
+		<div class="column1">
+			<div class="title2">
+				<h2>Maecenas luctus</h2>
+			</div>
+			<p>This is <strong>Wide-Range</strong>, a free, fully standards-compliant CSS template designed by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>. The photos in this template are from <a href="http://fotogrph.com/"> Fotogrph</a>. This free template is released under the <a href="http://templated.co/license">Creative Commons Attribution</a> license, so you're pretty much free to do whatever you want with it (even use it commercially) provided you give us credit for it. Have fun :) </p>
+		</div>
+		<div class="column2">
+			<div class="title2">
+				<h2>核心價值永續經營</h2>
+			</div>
+			<img src="images/pic01.jpg" width="282" height="150" alt="" />
+			<p>永固團隊秉持著「誠信正直、熱忱服務、永續經營、榮譽至上」的經營原則，以及十餘年來累積的專業保全服務經驗，成功獲得客戶的支持與信任。然而，這一切只是開始！現在我們能做的，仍是追求創新，滿足來自於您的每一份期望。</p>
+		</div>
+		<div class="column3">
+			<div class="title2">
+				<h2>深耕台灣熱忱服務</h2>
+			</div>
+			<img src="images/pic02.jpg" width="282" height="150" alt="" />
+			<p>本公司為全台灣七百餘間保全公司中，少數北、中、南皆具有辦事處者。從北至南共有四個分支處所，若您不僅止於某個地區需要我們，可以透過永固於台北、桃園、台中、高雄辦事處，替您節省寶貴的時間，並予您最迅速且完善的服務，滿足您的需求。</p>
+		</div>
+		<div class="column4">
+			<div class="title2">
+				<h2>桃園十大榮譽至上</h2>
+			</div>
+			<img src="images/pic03.jpg" width="282" height="150" alt="" />
+			<p>本公司為桃園十大保全公司之一。提供多元的保全服務是我們不變與努力的方向。故不論面對什麼樣的挑戰，或於台灣哪一個角落，我們均有十足的信心透過永固，一定能夠使您放心。</p>
+		</div>-->
