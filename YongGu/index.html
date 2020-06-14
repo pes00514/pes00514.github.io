@@ -24,8 +24,8 @@ Released   : 20140315
 <style>
       
 .slide {
-  width: 400px;
-  height: 300px;
+  //width: 400px;
+  height: 670px;
   overflow: hidden;
   position: relative;
   background-color: #000;
@@ -50,7 +50,7 @@ Released   : 20140315
 .slide > div:nth-child(5) {
   animation-delay: 20s;
 }
- 
+
 @keyframes slide {
   10% {
     opacity: 1;
@@ -65,25 +65,32 @@ Released   : 20140315
     transform: scale(1.1);
   }
 }
+
+#header-wrapper{
+background-image:url();
+position: absolute;
+top: 0;
+left: 50%;
+z-index: 9;
+transform: translate(-50%, 0%);
+}
 </style>
 <!--[if IE 6]>
 <link href="default_ie6.css" rel="stylesheet" type="text/css" />
 <![endif]-->
 </head>
-<body>
-<div class="slider">  
-        <div class="items"></div>  
-    </div>  
+<body>	
+
 <div id="wrapper">
 <div class="slide">
-  <div class="header-wrapper" style="background-image:url(https://picsum.photos/400/300?image=989"></div>
-  <div class="header-wrapper" style="background-image:url(https://picsum.photos/400/300?image=990"></div>
-  <div class="header-wrapper" style="background-image:url(https://picsum.photos/400/300?image=991"></div>
-  <div class="header-wrapper" style="background-image:url(https://picsum.photos/400/300?image=957"></div>
-  <div class="header-wrapper" style="background-image:url(https://picsum.photos/400/300?image=993"></div>
+  <div class="header-wrapper" style="background:url(images/bg.jpg) no-repeat top center;background-size: cover;"></div>
+  <div class="header-wrapper" style="background:url(images/bg.jpg) no-repeat top center;background-size: cover;"></div>
+  <div class="header-wrapper" style="background:url(images/bg.jpg) no-repeat top center;background-size: cover;"></div>
+  <div class="header-wrapper" style="background:url(images/bg.jpg) no-repeat top center;background-size: cover;"></div>
+  <div class="header-wrapper" style="background:url(images/bg.jpg) no-repeat top center;background-size: cover;"></div>
 </div>
-	<div id="header-wrapper">
-		<!--<div id="header" class="container">
+<div id="header-wrapper" style="background-image:url()">
+		<div id="header" class="container">
 			<div id="logo">
 				<h1><a href="#">永固保全股份有限公司</a></h1>
 			</div>
@@ -106,7 +113,7 @@ Released   : 20140315
 				<li id="li_organization"><a href="index.html?page=organization" accesskey="4" title="">組織架構 </a></li>
 				<li id="li_contact_us"><a href="index.html?page=contact_us" accesskey="5" title="">聯絡我們</a></li>
 			</ul>
-		</div>-->
+		</div>
 	</div>
 
 		<div id="page" class="container"></div>
@@ -174,10 +181,6 @@ if(url.indexOf('?')!=-1)
 
 $.get(page+".html",function(data){
   $('#page').prepend(data);
-});
-
-$.get("header.html",function(data){
-  $('.header-wrapper').prepend(data);
 });
 
 
