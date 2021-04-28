@@ -205,7 +205,7 @@ function sizechange(sId){
 					"idwatchimg/Watchsurface/S面板-羅馬黑.png",
 					//20210428 Mochi新增
 					"idwatchimg/Watchsurface/S面板-面板-粉白珠光紋.png",
-					"idwatchimg/Watchsurface/S面板-海藍潮汐綠.PNG"];
+					"idwatchimg/Watchsurface/S面板-海藍潮汐綠.png"];
 		surfaceB =["idwatchimg/surfaceBig/36mm-面板-簡約白.png",
 					"idwatchimg/surfaceBig/36mm-面板-簡約黑.png",
 					"idwatchimg/surfaceBig/36mm-面板-太陽紋面板-翠綠.png",
