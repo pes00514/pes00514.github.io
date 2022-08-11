@@ -1102,6 +1102,7 @@ function iOSBrowser(){
         if(window[params.name]) {
             window[params.name](params);
         } else { 
+			document.getElementById('openWeb-result').innerText = `[Hybrid-SDK] 執行錯誤：${params.name} 未定義`;
             console.error(`[Hybrid-SDK] 執行錯誤：${params.name} 未定義`); 
         }
         return params;
@@ -1116,6 +1117,7 @@ function iOSApp(){
         try{
             window.webkit.messageHandlers.mobile.postMessage(params);
         }catch(exception) {
+			document.getElementById('openWeb-result').innerText = '[Hybrid-SDK: execute] 執行錯誤：';
             console.error('[Hybrid-SDK: execute] 執行錯誤：');
         }
         return params;
@@ -1131,6 +1133,7 @@ function AndroidBrowser(){
         try{
             window[params.name](params);
         }catch(exception){
+			document.getElementById('openWeb-result').innerText = `[Hybrid-SDK: execute] 執行錯誤：window.${params.name}`;
             console.error(`[Hybrid-SDK: execute] 執行錯誤：window.${params.name}`, exception);
         }
         return params;
@@ -1146,6 +1149,7 @@ function AndroidApp(){
         try {
             window.mobile.postMessage(JSON.stringify(params));
         } catch(exception) {
+			document.getElementById('openWeb-result').innerText = '[Hybrid-SDK] 執行錯誤app：'+exception+","+JSON.stringify(params);
             console.error('[Hybrid-SDK] 執行錯誤：', exception);
         }
         return params;
@@ -1161,6 +1165,7 @@ function WebBrowser(){
         try{
             window[params.name](params);
         }catch(exception) {
+			document.getElementById('openWeb-result').innerText = `[Hybrid-SDK: execute] 執行錯誤：${params.name}`;
             console.error(`[Hybrid-SDK: execute] 執行錯誤：${params.name}`, exception);
         }
         return params;
@@ -1175,6 +1180,7 @@ function MacWebBrowser(){
         try{
             window[params.name](params);
         }catch(exception) {
+			document.getElementById('openWeb-result').innerText = `[Hybrid-SDK: execute] 執行錯誤：${params.name}`;
             console.error(`[Hybrid-SDK: execute] 執行錯誤：${params.name}`, exception);
         }
         return params;
@@ -1189,6 +1195,7 @@ function WinWebBrowser(){
         try{
             window[params.name](params);
         }catch(exception) {
+			document.getElementById('openWeb-result').innerText = `[Hybrid-SDK: execute] 執行錯誤：${params.name}`;
             console.error(`[Hybrid-SDK: execute] 執行錯誤：${params.name}`, exception);
         }
         return params;
