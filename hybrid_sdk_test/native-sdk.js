@@ -1147,7 +1147,7 @@ function AndroidApp(){
     this.inHybridAPP = isInHybridApp();
     this.execute = function(params){
         try {
-            window.mobile.postMessage(JSON.stringify(params));
+            window.mobile.postMessage(JSON.stringify(params),"*");
         } catch(exception) {
 			document.getElementById('openWeb-result').innerText = '[Hybrid-SDK] 執行錯誤app：'+exception+","+JSON.stringify(params);
             console.error('[Hybrid-SDK] 執行錯誤：', exception);
