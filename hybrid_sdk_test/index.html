@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hybrid SDK Example</title>
+    <script src="./native-sdk.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body, html{
+            width: 100%;
+            margin: 0;
+            padding: 1rem .5rem;
+        }
+        section, button {
+            display: block;
+        }
+
+        button {
+            background-color: #ccc;
+            border: 1px solid #898989;
+        }
+
+        code {
+            display: block;
+            padding: 1rem 0;
+        }
+
+        .result{
+            background-color: black;
+            color: white;
+            padding: .5rem;
+            width: 100%;
+            overflow: auto;
+            word-break: break-all;
+        }
+
+        .result h4 {
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Hybrid SDK 測試網頁</h1>
+    <main>
+        <article>
+            <h2>裝置類別</h2>
+            <p id="deviceType"></p>
+            <p id="userAgent"></p>
+            <p id="inHybridAPP"></p>
+        </article>
+        <article>
+           <section>
+                <h2>閱讀、瀏覽</h2>
+                <section>
+                    <h3>外開瀏覽器: openWeb</h3>
+                    <button type="button" onclick="executeWeb2Native('openWeb')">外開瀏覽器</button>
+                    <code>
+                        var options = {
+                            origin: "Web", 
+                            uuid: "53b60f50-422a-4b3b-be86-b17baa8ce776", 
+                            name: "openWeb",
+                            args: {
+                                url: "https://google.com",
+                                type: "Browser"
+                            }
+                        }
+                    </code>
+                    <section class="result">
+                        <h4>&gt; 結果 </h4>
+                        <code id="openWeb-result"></code>
+                    </section>
+                </section>
+           </section>
+        </article>
+    </main>
+    <script src="./index-sdk-test.js"></script>
+</body>
+</html>
